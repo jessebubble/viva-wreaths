@@ -4,8 +4,8 @@ import './index.css';
 import App from './App';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Contact from './components/contact';
-import About from './components/about';
 import Store from './components/store';
+import Product from './components/product';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,8 +14,8 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<About />} />
         <Route path="/store" element={<Store />} />
+        <Route path="/product/:slug" element={<Product />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

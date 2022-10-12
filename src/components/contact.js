@@ -43,7 +43,7 @@ export default function Contact() {
                     </p>
                 </div>
                 <div class="rounded-bl-2xl rounded-br-2xl bg-gray-50 p-6 md:px-8">
-                    <a href="/" class="text-base font-medium text-rose-500 hover:text-indigo-600">Contact us<span aria-hidden="true"> &rarr;</span></a>
+                    <a href="/contact" class="text-base font-medium text-rose-500 hover:text-indigo-600">Contact us<span aria-hidden="true"> &rarr;</span></a>
                 </div>
             </div>
             <div class="flex flex-col rounded-2xl bg-white shadow-xl">
@@ -60,7 +60,7 @@ export default function Contact() {
                     </p>
                 </div>
                 <div class="rounded-bl-2xl rounded-br-2xl bg-gray-50 p-6 md:px-8">
-                    <a href="/" class="text-base font-medium text-rose-500 hover:text-indigo-600">Contact us<span aria-hidden="true"> &rarr;</span></a>
+                    <a href="/contact" class="text-base font-medium text-rose-500 hover:text-indigo-600">Contact us<span aria-hidden="true"> &rarr;</span></a>
                 </div>
             </div>
             <div class="flex flex-col rounded-2xl bg-white shadow-xl">
@@ -77,7 +77,7 @@ export default function Contact() {
                     </p>
                 </div>
                 <div class="rounded-bl-2xl rounded-br-2xl bg-gray-50 p-6 md:px-8">
-                    <a href="/" class="text-base font-medium text-rose-500 hover:text-indigo-600">Contact us<span aria-hidden="true"> &rarr;</span></a>
+                    <a href="/contact" class="text-base font-medium text-rose-500 hover:text-indigo-600">Contact us<span aria-hidden="true"> &rarr;</span></a>
                 </div>
             </div>
         </div>

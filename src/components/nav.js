@@ -35,15 +35,14 @@ export default function Simple() {
                                 </div>
                             </div>
                             <div className="hidden md:ml-10 md:block md:space-x-10">
-                                <a href="/about" className="font-medium text-gray-500 hover:text-gray-900">About</a>
                                 <a href="/contact" className="font-medium text-gray-500 hover:text-gray-900">Contact</a>
-                                <a href="/store" className="font-medium text-rose-600 hover:text-gray-900">Store</a>
+                                <a href="/store" className="font-medium text-sky-500 hover:text-gray-900">Store</a>
                             </div>
                         </div>
                         <div className="hidden text-right md:block">
                             <span className="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
-                                <a href="/store" className="inline-flex items-center rounded-md border border-transparent bg-white px-4 py-2 text-base font-medium text-rose-600 hover:bg-gray-50">
-                                    Buy Now
+                                <a href="/store" className="inline-flex items-center rounded-md border border-transparent bg-white px-4 py-2 text-base font-medium text-sky-500 hover:bg-gray-50">
+                                    Shop Now
                                 </a>
                             </span>
                         </div>

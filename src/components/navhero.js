@@ -35,15 +35,14 @@ export default function Nav() {
                             </div>
                         </div>
                         <div className="hidden md:ml-10 md:block md:space-x-10">
-                            <a href="/about" className="font-medium text-gray-500 hover:text-gray-900">About</a>
                             <a href="/contact" className="font-medium text-gray-500 hover:text-gray-900">Contact</a>
-                            <a href="/store" className="font-medium text-rose-600 hover:text-gray-900">Store</a>
+                            <a href="/store" className="font-medium text-sky-500 hover:text-gray-900">Store</a>
                         </div>
                     </div>
                     <div className="hidden text-right md:block">
                         <span className="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
-                            <a href="/store" className="inline-flex items-center rounded-md border border-transparent bg-white px-4 py-2 text-base font-medium text-rose-600 hover:bg-gray-50">
-                                Buy Now
+                            <a href="/store" className="inline-flex items-center rounded-md border border-transparent bg-white px-4 py-2 text-base font-medium text-gray-900 hover:bg-gray-50">
+                             View new arrivals 
                             </a>
                         </span>
                     </div>
@@ -75,11 +74,10 @@ export default function Nav() {
                             </div>
                         </div>
                         <div className="space-y-1 px-2 pt-2 pb-3">
-                            <a href="/about" className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">About</a>
-                            <a href="/contact" className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Contact</a>
-                            <a href="/store" className="block rounded-md px-3 py-2 text-base font-medium text-rose-600 hover:bg-gray-50 hover:text-gray-900">Store</a>
+                            <a href="/store" className="block rounded-md px-3 py-2 text-base font-medium text-sky-500 hover:bg-gray-50 hover:text-gray-900">Viva Wreath Store</a>
+                            <a href="/contact" className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Contact us</a>
                         </div>
-                        <a href="/store" className="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-rose-600 hover:bg-gray-100">Buy Now</a>
+                        <a href="/store" className="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-sky-500 hover:bg-gray-100">Shop the collection</a>
                     </div>
                 </div>
             </div>
