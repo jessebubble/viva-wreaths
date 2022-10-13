@@ -116,158 +116,6 @@ export default function App() {
         </div>
     </main>
 
-    <main className="relative bg-white">
-      {/*  <!-- Background image and overlap --> */}
-      <div aria-hidden="true" className="absolute inset-0 hidden sm:flex sm:flex-col">
-        <div className="relative w-full flex-1 bg-gray-800">
-          <div className="absolute inset-0 overflow-hidden">
-            <img 
-              src="./background.jpg" 
-              alt="" 
-              className="h-full w-full object-cover object-center"
-            />
-          </div>
-          <div className="absolute inset-0 bg-gray-900 opacity-50"></div>
-        </div>
-        <div className="h-32 w-full bg-white md:h-40 lg:h-48"></div>
-      </div>
-      <div className="relative mx-auto max-w-3xl px-4 pb-96 text-center sm:px-6 sm:pb-0 lg:px-8">
-        {/* <!-- Background image and overlap --> */}
-        <div aria-hidden="true" className="absolute inset-0 flex flex-col sm:hidden">
-          <div className="relative w-full flex-1 bg-gray-800">
-            <div className="absolute inset-0 overflow-hidden">
-              <img 
-                src="./background.jpg" 
-                alt="" 
-                className="h-full w-full object-cover object-center"
-              />
-            </div>
-            <div className="absolute inset-0 bg-gray-900 opacity-50"></div>
-          </div>
-          <div className="h-48 w-full bg-white"></div>
-        </div>
-        <div className="relative py-32">
-          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-            Holiday Season 2022
-          </h1>
-          <div className="mt-4 sm:mt-6">
-            <a href="/store" className="inline-block rounded-md border border-transparent bg-indigo-600 py-3 px-8 font-medium text-white hover:bg-indigo-700">
-              Shop Collection
-            </a>
-          </div>
-        </div>
-      </div>
-      <section aria-labelledby="collection-heading" className="relative -mt-96 sm:mt-0">
-        <h2 id="collection-heading" className="sr-only">Collections</h2>
-        <div className="mx-auto grid max-w-md grid-cols-1 gap-y-6 px-4 sm:max-w-7xl sm:grid-cols-3 sm:gap-y-0 sm:gap-x-6 sm:px-6 lg:gap-x-8 lg:px-8">
-          <div className="group relative h-96 rounded-lg bg-white shadow-xl sm:aspect-w-4 sm:aspect-h-5 sm:h-auto">
-            <div>
-              <div aria-hidden="true" className="absolute inset-0 overflow-hidden rounded-lg">
-                <div className="absolute inset-0 overflow-hidden group-hover:opacity-75">
-                  <img 
-                    src="./halloween.jpg" 
-                    alt="Woman wearing an off-white cotton t-shirt." 
-                    className="h-full w-full object-cover object-center"
-                  />
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50"></div>
-              </div>
-              <div className="absolute inset-0 flex items-end rounded-lg p-6">
-                <div>
-                  <p aria-hidden="true" className="text-sm text-white">Shop the collection</p>
-                  <h3 className="mt-1 font-semibold text-white">
-                    <a href="/store">
-                      <span className="absolute inset-0"></span>
-                      Halloween
-                    </a>
-                  </h3>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="group relative h-96 rounded-lg bg-white shadow-xl sm:aspect-w-4 sm:aspect-h-5 sm:h-auto">
-            <div>
-              <div aria-hidden="true" className="absolute inset-0 overflow-hidden rounded-lg">
-                <div className="absolute inset-0 overflow-hidden group-hover:opacity-75">
-                  <img 
-                    src="./thanksgiving.jpg" 
-                    alt="Man wearing a charcoal gray cotton t-shirt." 
-                    className="h-full w-full object-cover object-center"
-                  />
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50"></div>
-              </div>
-              <div className="absolute inset-0 flex items-end rounded-lg p-6">
-                <div>
-                  <p aria-hidden="true" className="text-sm text-white">Shop the collection</p>
-                  <h3 className="mt-1 font-semibold text-white">
-                    <a href="/store">
-                      <span className="absolute inset-0"></span>
-                      Thanksgiving
-                    </a>
-                  </h3>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="group relative h-96 rounded-lg bg-white shadow-xl sm:aspect-w-4 sm:aspect-h-5 sm:h-auto">
-            <div>
-              <div aria-hidden="true" className="absolute inset-0 overflow-hidden rounded-lg">
-                <div className="absolute inset-0 overflow-hidden group-hover:opacity-75">
-                  <img 
-                    src="./christmas.jpg" 
-                    alt="Person sitting at a wooden desk with paper note organizer, pencil and tablet." 
-                    className="h-full w-full object-cover object-center"
-                  />
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50"></div>
-              </div>
-              <div className="absolute inset-0 flex items-end rounded-lg p-6">
-                <div>
-                  <p aria-hidden="true" className="text-sm text-white">Shop the collection</p>
-                  <h3 className="mt-1 font-semibold text-white">
-                    <a href="/store">
-                      <span className="absolute inset-0"></span>
-                      Christmas
-                    </a>
-                  </h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <main className="bg-white">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
-        <div className="rounded-3xl bg-amber-400 py-10 px-6 sm:py-16 sm:px-12 lg:flex lg:items-center lg:p-20">
-          <div className="lg:w-0 lg:flex-1">
-            <h2 className="text-3xl font-bold tracking-tight text-white">Sign up for our newsletter</h2>
-            <p className="mt-4 max-w-3xl text-lg text-gray-900">
-              Get exclusive early access to our upcoming collections.
-            </p>
-          </div>
-          <div className="mt-12 sm:w-full sm:max-w-md lg:mt-0 lg:ml-8 lg:flex-1">
-            <form className="sm:flex">
-              <label for="email-address" className="sr-only">Email address</label>
-              <input 
-                id="email-address" 
-                name="email-address" 
-                type="email" 
-                autocomplete="email" 
-                required className="w-full rounded-md border-white px-5 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-700" 
-                placeholder="Enter your email"
-              />
-              <button type="submit" className="mt-3 flex w-full items-center justify-center rounded-md border border-transparent bg-gray-900 px-5 py-3 text-base font-medium text-white hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-700 sm:mt-0 sm:ml-3 sm:w-auto sm:flex-shrink-0">
-                Notify me
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </main>
-
     <main class="relative bg-white py-16">
       <div class="absolute inset-x-0 top-0 hidden h-1/2 bg-white lg:block" aria-hidden="true"></div>
       <div class="mx-auto max-w-7xl bg-gray-50 lg:bg-transparent lg:px-8">
@@ -318,6 +166,35 @@ export default function App() {
                   </div>
               </div>
           </div>
+      </div>
+    </main>
+
+    <main className="bg-white">
+      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
+        <div className="rounded-3xl bg-amber-400 py-10 px-6 sm:py-16 sm:px-12 lg:flex lg:items-center lg:p-20">
+          <div className="lg:w-0 lg:flex-1">
+            <h2 className="text-3xl font-bold tracking-tight text-white">Sign up for our newsletter</h2>
+            <p className="mt-4 max-w-3xl text-lg text-gray-900">
+              Get exclusive early access to our upcoming collections.
+            </p>
+          </div>
+          <div className="mt-12 sm:w-full sm:max-w-md lg:mt-0 lg:ml-8 lg:flex-1">
+            <form className="sm:flex">
+              <label for="email-address" className="sr-only">Email address</label>
+              <input 
+                id="email-address" 
+                name="email-address" 
+                type="email" 
+                autocomplete="email" 
+                required className="w-full rounded-md border-white px-5 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-700" 
+                placeholder="Enter your email"
+              />
+              <button type="submit" className="mt-3 flex w-full items-center justify-center rounded-md border border-transparent bg-gray-900 px-5 py-3 text-base font-medium text-white hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-700 sm:mt-0 sm:ml-3 sm:w-auto sm:flex-shrink-0">
+                Notify me
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </main>
 

@@ -60,7 +60,7 @@ export default function Store() {
         <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
             <h2 className="sr-only">Products</h2>
             <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-8">
-                {allProduct && allProduct.map((product, index) => ( 
+                {allProduct && allProduct.map((product) => ( 
                     <div className="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white">
                         <div className="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-96">
                             <img 

@@ -17,7 +17,7 @@ export default function Simple() {
                     <rect x="118" width="404" height="784" fill="url(#9ebea6f4-a1f5-4d96-8c4e-4c2abf658047)" />
                 </svg>
             </div>
-            <div className="relative pt-6 pb-16 sm:pb-24 lg:pb-32">
+            <div className="relative pt-6 pb-16 sm:pb-24 lg:pb-28">
                 <div>
                     <nav className="relative mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6" aria-label="Global">
                         <div className="flex flex-1 items-center">
