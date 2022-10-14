@@ -5,7 +5,7 @@ import App from './App';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Contact from './components/contact';
 import Store from './components/store';
-import Product from './components/product';
+import Checkout from './components/checkout';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,7 +15,7 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/store" element={<Store />} />
-        <Route path="/product/:slug" element={<Product />} />
+        <Route path="/checkout" element={<Checkout />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

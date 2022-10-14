@@ -50,7 +50,7 @@ export default function Store() {
                     Get your home and business ready for the holidays with our seasonal collection of wreaths. Made with love by your local San Antonio creatives
                 </p>
                 <a href="/store" class="mt-8 inline-block rounded-md border border-transparent bg-white py-3 px-8 text-base font-medium text-gray-900 hover:bg-gray-100">
-                    Shop New Arrivals
+                    View our collection below 
                 </a>
             </div>
         </div>
@@ -71,7 +71,7 @@ export default function Store() {
                         </div>
                         <div className="flex flex-1 flex-col space-y-2 p-4">
                             <h3 className="text-sm font-medium text-gray-900">
-                                <Link to={"/product/" + product.slug.current} key={product.slug.current}>
+                                <Link to='/'>
                                 <span aria-hidden="true" className="absolute inset-0"></span>
                                 {product.name}
                                 </Link>
@@ -90,6 +90,78 @@ export default function Store() {
                         </div>
                     </div>
                 ))}
+            </div>
+        </div>
+    </main>
+
+    <main className="bg-slate-100">
+        <div className="mx-auto max-w-2xl py-24 px-4 sm:py-32 sm:px-6 lg:max-w-7xl lg:px-8">
+            <div className="grid grid-cols-1 items-center gap-y-16 gap-x-8 lg:grid-cols-2">
+                <div>
+                    <div className="border-b border-gray-300 pb-10">
+                        <h2 className="font-medium text-fuchsia-500">Viva Wreaths</h2>
+                        <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Made for every season</p>
+                    </div>
+
+                    <dl className="mt-10 space-y-10">
+                    <div>
+                        <dt className="text-sm font-medium text-fuchsia-500">Design</dt>
+                        <dd className="mt-3 text-sm text-gray-500">
+                        Inspiration for every season, every occasion, and every mood.
+                        Viva Wreaths are made to bring joy to your home and to the people you love.
+                        </dd>
+                    </div>
+
+                    <div>
+                        <dt className="text-sm font-medium text-fuchsia-500">Materials</dt>
+                        <dd className="mt-3 text-sm text-gray-500">
+                        Made with love and care, using quality materials and sustainable practices.
+                        We use only the best materials to ensure your wreath will last for years to come.
+                        </dd>
+                    </div>
+
+                    <div>
+                        <dt className="text-sm font-medium text-fuchsia-500">What's included</dt>
+                        <dd className="mt-3 text-sm text-gray-500">
+                        Each wreath includes a coordinating ribbon and a hook for easy hanging.
+                        Everything you need to bring joy to your home.
+                        </dd>
+                    </div>
+
+                    <div>
+                        <dt className="text-sm font-medium text-fuchsia-500">Commercial</dt>
+                        <dd className="mt-3 text-sm text-gray-500">
+                        Viva Wreaths are available for commercial use. Need a custom wreath for your display? Contact us for more information.
+                        </dd>
+                    </div>
+                    </dl>
+                </div>
+
+                <div>
+                    <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-lg bg-gray-100">
+                    <img 
+                        src="./wreath.jpg" 
+                        alt="Black kettle with long pour spot and angled body on marble counter next to coffee mug and pour-over system." 
+                        className="h-full w-full object-cover object-center"
+                    />
+                    </div>
+                    <div className="mt-4 grid grid-cols-2 gap-4 sm:mt-6 sm:gap-6 lg:mt-8 lg:gap-8">
+                    <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-lg bg-gray-100">
+                        <img 
+                        src="./table2.jpg" 
+                        alt="Detail of temperature setting button on kettle bass with digital degree readout." 
+                        className="h-full w-full object-cover object-center"
+                        />
+                    </div>
+                    <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-lg bg-gray-100">
+                        <img 
+                        src="./table.jpg" 
+                        alt="Kettle spout pouring boiling water into coffee grounds in pour-over mug." 
+                        className="h-full w-full object-cover object-center"
+                        />
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

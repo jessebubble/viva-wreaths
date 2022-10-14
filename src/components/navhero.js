@@ -1,8 +1,23 @@
 import { ReactComponent as Banner} from '../banner.svg'
 import { Menu, Transition } from '@headlessui/react';
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 
 export default function Nav() {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_hxrxpdb', 'template_p9czz9g', form.current, 'Vg9DbywednMl26hQU')
+            .then((result) => {
+                    console.log(result.text);
+                },(error) => {
+                    console.log(error.text);
+                });
+                e.target.reset();
+    };
   return (
     <>
     <main className="relative overflow-hidden bg-white">
@@ -60,8 +75,16 @@ export default function Nav() {
                             </div>
                         </div>
                         <div className="hidden md:ml-10 md:block md:space-x-10">
-                            <a href="/store" className="font-medium text-indigo-600 hover:text-gray-900">Viva Wreath Store</a>
-                            <a href="/contact" className="font-medium text-gray-600 hover:text-gray-900">Contact Us</a>
+                            <span className="inline-flex ">
+                                <a href="/store" className="inline-flex items-center text-base tracking-tight antialiased font-medium text-fuchsia-600 hover:text-gray-600 hover:border-b-2 hover:border-indigo-600">
+                                    Shop Collection
+                                </a>
+                            </span>
+                            <span className="inline-flex ">
+                                <a href="/contact" className="inline-flex items-center text-base tracking-tight antialiased font-medium text-gray-600 hover:text-gray-900 hover:border-b-2 hover:border-indigo-600">
+                                    Contact Us
+                                </a>
+                            </span>
                         </div>
                     </div>
                 </nav>           
@@ -195,7 +218,7 @@ export default function Nav() {
         </section>
     </main>
 
-    <main className="mx-auto mt-16 max-w-7xl px-4 sm:mt-24 sm:px-6 mb-10 md:mb-16 lg:mb-20">
+    <main className="mx-auto mt-16 max-w-7xl px-4 sm:mt-24 sm:px-6 lg:pt-4 lg:pb-4">
         <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             <div className="sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:text-left">
                 <h1>
@@ -212,7 +235,7 @@ export default function Nav() {
                     <p className="text-base font-medium text-gray-900">
                         Sign up to get notified when new designs are available.
                     </p>
-                    <form action="#" method="POST" className="mt-3 sm:flex">
+                    <form ref={form} onSubmit={sendEmail} action="#" method="POST" className="mt-3 sm:flex">
                         <label for="email" className="sr-only">Email</label>
                         <input 
                             type="email" 
@@ -257,80 +280,7 @@ export default function Nav() {
         </div>
     </main>
 
-    <main className="bg-white">
-        <div className="overflow-hidden pt-32 sm:pt-14">
-            <div className="bg-slate-100">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <div className="relative pt-48 pb-16 sm:pb-24">
-                        <div>
-                            <h2 id="sale-heading" className="text-4xl font-bold tracking-tight text-gray-900 md:text-5xl">
-                                <span className='text-rose-500'>VIVA</span> Wreaths
-                                <br />
-                                Holday collection 2022
-                            </h2>
-                            <div className="mt-6 text-base">
-                                <a href="/store" className="font-semibold text-rose-500">
-                                    Shop the collection <span aria-hidden="true"> &rarr;</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="absolute -top-32 left-1/2 -translate-x-1/2 transform sm:top-6 sm:translate-x-0">
-                            <div className="ml-24 flex min-w-max space-x-6 sm:ml-3 lg:space-x-8">
-                                <div className="flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
-                                    <div className="flex-shrink-0">
-                                        <img 
-                                            className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72" 
-                                            src="./christmas.jpg" 
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div className="mt-6 flex-shrink-0 sm:mt-0">
-                                        <img 
-                                            className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72" 
-                                            src="./background.jpg" 
-                                            alt=""
-                                        />
-                                    </div>
-                                </div>
-                                <div className="flex space-x-6 sm:-mt-20 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
-                                    <div className="flex-shrink-0">
-                                        <img 
-                                            className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72" 
-                                            src="wreath.jpg" 
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div className="mt-6 flex-shrink-0 sm:mt-0">
-                                        <img 
-                                            className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72" 
-                                            src="./halloween.jpg" 
-                                            alt=""
-                                        />
-                                    </div>
-                                </div>
-                                <div className="flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
-                                    <div className="flex-shrink-0">
-                                        <img 
-                                            className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72" 
-                                            src="./thanksgiving.jpg" 
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div className="mt-6 flex-shrink-0 sm:mt-0">
-                                        <img 
-                                            className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72" 
-                                            src="./table2.jpg" 
-                                            alt=""
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+    
     </>
   )
 }

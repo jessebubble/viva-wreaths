@@ -60,13 +60,13 @@ export default function Simple() {
                                 </div>
                             </div>
                             <div className="hidden md:ml-10 md:block md:space-x-10">
-                                <a href="/store" className="font-medium text-rose-500 hover:text-gray-900">VIVA Wreath Store</a>
-                                <a href="/contact" className="font-medium text-gray-600 hover:text-gray-900">Contact Us</a>
+                                <a href="/store" className="inline-flex items-center text-base antialiased tracking-tight font-medium text-rose-500 hover:text-lime-400 hover:border-b-2 hover:border-indigo-600">Shop Collection</a>
+                                <a href="/contact" className="inline-flex items-center text-base antialiased tracking-tight font-medium text-gray-600 hover:text-lime-400 hover:border-b-2 hover:border-indigo-600">Contact Us</a>
                             </div>
                         </div>
                         <div className="hidden text-right md:block">
                             <span className="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
-                                <a href="/store" className="inline-flex items-center rounded-md border border-indigo-200 bg-white px-4 py-2 text-base font-medium text-indigo-600 hover:bg-gray-50">
+                                <a href="/store" className="inline-flex items-center tracking-tight antialiased rounded-md border border-indigo-200 bg-white px-4 py-2 text-base font-medium text-indigo-600 hover:bg-gray-50">
                                     Shop New Arrivals
                                 </a>
                             </span>
