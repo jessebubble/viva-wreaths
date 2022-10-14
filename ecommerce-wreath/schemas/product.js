@@ -11,6 +11,7 @@ export default {
             options: {
                 hotspot: true,
             },
+            
         },
         {
             name: 'name',
