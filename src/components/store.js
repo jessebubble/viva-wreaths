@@ -31,32 +31,7 @@ export default function Store() {
     <>
     <Simple />
 
-    <main class="bg-white -mt-10 md:-mt-16 lg:-mt-20">
-        <div class="relative bg-slate-900">
-            {/* <!-- Decorative image and overlay --> */}
-            <div aria-hidden="true" class="absolute inset-0 overflow-hidden">
-                <img 
-                    src="./table2.jpg" 
-                    alt="" 
-                    class="h-full w-full object-cover object-center"
-                />
-            </div>
-            <div aria-hidden="true" class="absolute inset-0 bg-gray-900 opacity-50"></div>
-            <div class="relative mx-auto flex max-w-3xl flex-col items-center py-32 px-6 text-center sm:py-64 lg:px-0">
-                <h1 class="text-4xl font-bold tracking-tight text-white lg:text-6xl">
-                    Holiday wreaths are here
-                </h1>
-                <p class="mt-4 text-xl text-white">
-                    Get your home and business ready for the holidays with our seasonal collection of wreaths. Made with love by your local San Antonio creatives
-                </p>
-                <a href="/store" class="mt-8 inline-block rounded-md border border-transparent bg-white py-3 px-8 text-base font-medium text-gray-900 hover:bg-gray-100">
-                    View our collection below 
-                </a>
-            </div>
-        </div>
-    </main>
-
-    <main className="bg-white">
+    <main className="bg-gradient-to-b from-indigo-200 via-indigo-600 to-indigo-200 p-10 md:p-16 md:-mt-24">
         <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
             <h2 className="sr-only">Products</h2>
             <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-8">
@@ -172,14 +147,14 @@ export default function Store() {
             <div class="absolute inset-0">
                 <img 
                     class="h-full w-full object-cover" 
-                    src="./christmas.jpg" 
+                    src="./background.jpg" 
                     alt=""
                 />
-                <div class="absolute inset-0 bg-slate-600 mix-blend-multiply" aria-hidden="true"></div>
+                <div class="absolute inset-0 bg-slate-500 mix-blend-multiply" aria-hidden="true"></div>
             </div>
             <div class="relative mx-auto max-w-7xl py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
                 <h1 class="text-4xl font-bold tracking-tight text-white md:text-5xl lg:text-6xl">Contact us</h1>
-                <p class="mt-6 max-w-3xl text-xl text-sky-400">
+                <p class="mt-6 max-w-3xl text-xl text-sky-500">
                     Let's create something together.
                 </p>
             </div>

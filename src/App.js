@@ -1,5 +1,6 @@
 import Nav from "./components/navhero";
 import Footer from "./components/footer";
+import Form from "./components/form";
 
 export default function App() {
   return (
@@ -7,7 +8,7 @@ export default function App() {
     <Nav />
 
     <main className="bg-white pt-16 lg:py-24">
-      <div className="bg-sky-500 pb-16 lg:relative lg:z-10 lg:pb-0">
+      <div className="bg-orange-500 pb-16 lg:relative lg:z-10 lg:pb-0">
         <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-8 lg:px-8">
           <div className="relative lg:-my-8">
             <div aria-hidden="true" className="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden"></div>
@@ -15,7 +16,7 @@ export default function App() {
               <div className="aspect-w-10 aspect-h-6 overflow-hidden rounded-xl shadow-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
                 <img 
                   className="object-cover lg:h-full lg:w-full" 
-                  src="./temp.jpg" 
+                  src="./wreath1.jpg" 
                   alt=""
                 />
               </div>
@@ -45,13 +46,8 @@ export default function App() {
 
     <main class="bg-white">
         {/* <!-- Header --> */}
-        <div class="relative bg-gray-800 pb-32">
+        <div class="relative bg-slate-50 pb-32">
             <div class="absolute inset-0">
-                <img 
-                    class="h-full w-full object-cover" 
-                    src="./christmas.jpg" 
-                    alt=""
-                />
                 <div class="absolute inset-0 bg-slate-600 mix-blend-multiply" aria-hidden="true"></div>
             </div>
             <div class="relative mx-auto max-w-7xl py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
@@ -120,80 +116,33 @@ export default function App() {
         </section>
     </main>
 
-    <main className="bg-white mb-10 md:mb-16 lg:mb-20">
-        <div className="overflow-hidden pt-32 sm:pt-14">
-            <div className="bg-slate-100">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <div className="relative pt-48 pb-16 sm:pb-24">
-                        <div>
-                            <h2 id="sale-heading" className="text-4xl font-bold tracking-tight text-gray-900 md:text-5xl">
-                                <span className='text-rose-500'>VIVA</span> Wreaths
-                                <br />
-                                Holday collection 2022
-                            </h2>
-                            <div className="mt-6 text-base">
-                                <a href="/store" className="font-semibold text-rose-500">
-                                    Shop the collection <span aria-hidden="true"> &rarr;</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="absolute -top-32 left-1/2 -translate-x-1/2 transform sm:top-6 sm:translate-x-0">
-                            <div className="ml-24 flex min-w-max space-x-6 sm:ml-3 lg:space-x-8">
-                                <div className="flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
-                                    <div className="flex-shrink-0">
-                                        <img 
-                                            className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72" 
-                                            src="./christmas.jpg" 
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div className="mt-6 flex-shrink-0 sm:mt-0">
-                                        <img 
-                                            className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72" 
-                                            src="./background.jpg" 
-                                            alt=""
-                                        />
-                                    </div>
-                                </div>
-                                <div className="flex space-x-6 sm:-mt-20 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
-                                    <div className="flex-shrink-0">
-                                        <img 
-                                            className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72" 
-                                            src="wreath.jpg" 
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div className="mt-6 flex-shrink-0 sm:mt-0">
-                                        <img 
-                                            className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72" 
-                                            src="./halloween.jpg" 
-                                            alt=""
-                                        />
-                                    </div>
-                                </div>
-                                <div className="flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
-                                    <div className="flex-shrink-0">
-                                        <img 
-                                            className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72" 
-                                            src="./thanksgiving.jpg" 
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div className="mt-6 flex-shrink-0 sm:mt-0">
-                                        <img 
-                                            className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72" 
-                                            src="./table2.jpg" 
-                                            alt=""
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <Form />
+
+    <main class="bg-white">
+        <div class="relative bg-slate-900">
+            {/* <!-- Decorative image and overlay --> */}
+            <div aria-hidden="true" class="absolute inset-0 overflow-hidden">
+                <img 
+                    src="./background.jpg" 
+                    alt="" 
+                    class="h-full w-full object-cover object-center"
+                />
+            </div>
+            <div aria-hidden="true" class="absolute inset-0 bg-gray-800 opacity-70"></div>
+            <div class="relative mx-auto flex max-w-3xl flex-col items-center py-32 px-6 text-center sm:py-64 lg:px-0">
+                <h1 class="text-4xl font-bold tracking-tight text-white lg:text-6xl">
+                    Holiday wreaths are here
+                </h1>
+                <p class="mt-4 text-xl text-white">
+                    Get your home and business ready for the holidays with our seasonal collection of wreaths. Made with love by your local San Antonio creatives
+                </p>
+                <a href="/store" class="mt-8 inline-block rounded-md border border-transparent bg-white py-3 px-8 text-base font-medium text-gray-900 hover:bg-gray-100">
+                   Shop the collection 
+                </a>
             </div>
         </div>
     </main>
+
 
     <Footer />
     </>
