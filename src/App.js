@@ -13,10 +13,10 @@ export default function App() {
           <div className="relative lg:-my-8">
             <div aria-hidden="true" className="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden"></div>
             <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:h-full lg:p-0">
-              <div className="aspect-w-10 aspect-h-6 overflow-hidden rounded-xl shadow-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
+              <div className="aspect-w-6 aspect-h-6 overflow-hidden rounded-xl shadow-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
                 <img 
                   className="object-cover lg:h-full lg:w-full" 
-                  src="./wreath5.jpg" 
+                  src="./wreath6.jpg" 
                   alt=""
                 />
               </div>
@@ -46,7 +46,7 @@ export default function App() {
 
     <main class="bg-white">
         {/* <!-- Header --> */}
-        <div class="relative bg-slate-50 pb-32">
+        <div class="relative bg-slate-900 pb-32">
             <div class="absolute inset-0">
                 <div class="absolute inset-0 bg-slate-600 mix-blend-multiply" aria-hidden="true"></div>
             </div>

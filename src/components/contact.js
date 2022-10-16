@@ -133,8 +133,8 @@ export default function Contact() {
                         <div aria-hidden="true" className="absolute inset-0 overflow-hidden rounded-lg">
                             <div className="absolute inset-0 overflow-hidden group-hover:opacity-75">
                                 <img 
-                                    src="./halloween.jpg" 
-                                    alt="Woman wearing an off-white cotton t-shirt." 
+                                    src="./wreath5.jpg" 
+                                    alt="wreath" 
                                     className="h-full w-full object-cover object-center"
                                 />
                             </div>
@@ -159,7 +159,7 @@ export default function Contact() {
                             <div className="absolute inset-0 overflow-hidden group-hover:opacity-75">
                                 <img 
                                     src="./thanksgiving.jpg" 
-                                    alt="Man wearing a charcoal gray cotton t-shirt." 
+                                    alt="wreath" 
                                     className="h-full w-full object-cover object-center"
                                 />
                             </div>
@@ -184,7 +184,7 @@ export default function Contact() {
                             <div className="absolute inset-0 overflow-hidden group-hover:opacity-75">
                                 <img 
                                     src="./christmas.jpg" 
-                                    alt="Person sitting at a wooden desk with paper note organizer, pencil and tablet." 
+                                    alt="wreath" 
                                     className="h-full w-full object-cover object-center"
                                 />
                             </div>

@@ -123,7 +123,7 @@ export default function Nav() {
                 <h1>
                     <span className="mt-1 block text-4xl font-bold tracking-tight sm:text-5xl xl:text-6xl">
                     <span className="block text-sky-500 ">VIVA Wreaths</span>
-                    <span className="block text-gray-900">adding some life to your home</span>
+                    <span className="block text-gray-900">adding some life to your home and business</span>
                     </span>
                 </h1>
                 <p className="mt-3 text-base text-gray-600 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
@@ -178,7 +178,7 @@ export default function Nav() {
         </div>
     </main>
 
-    <main className="bg-white md:mt-16">
+    <main className="bg-white mt-10 md:mt-16">
         <div className="overflow-hidden pt-32 sm:pt-14">
             <div className="bg-slate-100">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
