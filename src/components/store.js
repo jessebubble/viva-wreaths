@@ -31,13 +31,13 @@ export default function Store() {
     <>
     <Simple />
 
-    <main className="bg-gradient-to-b from-indigo-200 via-indigo-600 to-indigo-200 p-10 md:p-16 md:-mt-24">
+    <main className="bg-black -mt-16 md:-mt-44">
         <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
             <h2 className="sr-only">Products</h2>
             <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-8">
                 {allProduct && allProduct.map((product) => ( 
                     <div className="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white">
-                        <div className="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-96">
+                        <div className="aspect-w-3 aspect-h-3 bg-gray-200 group-hover:opacity-75 sm:aspect-1 sm:h-80">
                             <img 
                                 src={urlFor(product.image).type === 'image' ? urlFor(product.image).url() : urlFor(product.image[0]).url()}
                                 alt={product.name} 

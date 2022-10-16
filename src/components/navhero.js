@@ -1,4 +1,4 @@
-import { ReactComponent as Banner} from '../banner1.svg'
+import { ReactComponent as Banner} from '../banner.svg'
 import { Menu, Transition } from '@headlessui/react';
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
@@ -20,7 +20,7 @@ export default function Nav() {
     };
   return (
     <>
-    <main className="relative overflow-hidden bg-slate-900 -mt-10">
+    <main className="relative overflow-hidden bg-black">
         <div className="hidden lg:absolute lg:inset-0 lg:block" aria-hidden="true">
             <svg className="absolute top-0 left-1/2 translate-x-64 -translate-y-8 transform" width="640" height="784" fill="none" viewBox="0 0 640 784">
                 <defs>
@@ -28,7 +28,7 @@ export default function Nav() {
                         <rect x="0" y="0" width="4" height="4" className="text-slate-50" fill="currentColor" />
                     </pattern>
                 </defs>
-                <rect y="72" width="640" height="640" className="text-slate-900" fill="currentColor" />
+                <rect y="72" width="640" height="640" className="text-black" fill="currentColor" />
                 <rect x="118" width="404" height="784" fill="url(#9ebea6f4-a1f5-4d96-8c4e-4c2abf658047)" />
             </svg>
         </div>
@@ -39,7 +39,7 @@ export default function Nav() {
                         <div className="flex flex-col w-full items-center justify-between md:w-auto">
                             <a href="/">
                                 <span className="sr-only">Viva Wreaths</span>
-                                <Banner className='w-full h-full md:w-5/6 lg:w-4/6'/>
+                                <Banner className='w-44 md:w-40 lg:w-36 h-full'/>
                             </a>
                             <div className="-mr-2 flex items-center md:hidden">
                                 <Menu>
@@ -59,14 +59,14 @@ export default function Nav() {
                                         leaveTo='opacity-0 scale-95'
                                     >
                                         <Menu.Items className="inline-flex flex-col items-start p-6 gap-1">
-                                            <Menu.Item className='text-gray-300 font-medium'>
+                                            <Menu.Item className='text-gray-100 font-medium'>
                                                 {({ active }) => (
-                                                    <a href="/contact" className={`${active && 'font-medium text-gray-300 hover:text-gray-100'}`}>Contact us</a>
+                                                    <a href="/contact" className={`${active && 'hover:text-gray-100'}`}>Contact us</a>
                                                 )}
                                             </Menu.Item>
                                             <Menu.Item className='text-sky-500 font-medium'>
                                                 {({ active }) => (
-                                                    <a href="/store" className={`${active && 'font-medium text-gray-300 hover:text-gray-100'}`}>Let's go shopping</a>
+                                                    <a href="/store" className={`${active && 'hover:text-gray-100'}`}>Let's go shopping</a>
                                                 )}
                                             </Menu.Item>
                                         </Menu.Items>
@@ -92,92 +92,42 @@ export default function Nav() {
         </div>
     </main>
 
-    <main className="md:bg-slate-900 bg-white pt-10 md:pt-0 md:-mt-32 lg:-mt-10">
-        <div className="overflow-hidden pt-32 sm:pt-14">
-            <div className="bg-slate-100">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <div className="relative pt-48 pb-16 sm:pb-24">
-                        <div>
-                            <h2 id="sale-heading" className="text-4xl font-bold tracking-tight text-gray-900 md:text-5xl">
-                                <span className='text-indigo-600'>VIVA</span> Wreaths
-                                <br />
-                                Holday collection 2022
-                            </h2>
-                            <div className="mt-6 text-base">
-                                <a href="/store" className="font-semibold text-indigo-600">
-                                    Shop the collection <span aria-hidden="true"> &rarr;</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="absolute -top-32 left-1/2 -translate-x-1/2 transform sm:top-6 sm:translate-x-0">
-                            <div className="ml-24 flex min-w-max space-x-6 sm:ml-3 lg:space-x-8">
-                                <div className="flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
-                                    <div className="flex-shrink-0">
-                                        <img 
-                                            className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72" 
-                                            src="./wreath2.jpg" 
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div className="mt-6 flex-shrink-0 sm:mt-0">
-                                        <img 
-                                            className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72" 
-                                            src="./background.jpg" 
-                                            alt=""
-                                        />
-                                    </div>
-                                </div>
-                                <div className="flex space-x-6 sm:-mt-20 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
-                                    <div className="flex-shrink-0">
-                                        <img 
-                                            className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72" 
-                                            src="christmas.jpg" 
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div className="mt-6 flex-shrink-0 sm:mt-0">
-                                        <img 
-                                            className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72" 
-                                            src="./wreath3.jpg" 
-                                            alt=""
-                                        />
-                                    </div>
-                                </div>
-                                <div className="flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
-                                    <div className="flex-shrink-0">
-                                        <img 
-                                            className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72" 
-                                            src="./thanksgiving.jpg" 
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div className="mt-6 flex-shrink-0 sm:mt-0">
-                                        <img 
-                                            className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72" 
-                                            src="./table2.jpg" 
-                                            alt=""
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <main class="bg-white">
+        <div class="relative bg-slate-900">
+            {/* <!-- Decorative image and overlay --> */}
+            <div aria-hidden="true" class="absolute inset-0 overflow-hidden">
+                <img 
+                    src="./wreath5.jpg" 
+                    alt="" 
+                    class="h-full w-full object-cover object-center"
+                />
+            </div>
+            <div aria-hidden="true" class="absolute inset-0 bg-amber-800 opacity-60"></div>
+            <div class="relative mx-auto flex max-w-3xl flex-col items-center py-32 px-6 text-center sm:py-64 lg:px-0">
+                <h1 class="text-4xl font-bold tracking-tight text-white lg:text-6xl">
+                    Holiday wreaths are here
+                </h1>
+                <p class="mt-4 text-xl text-white">
+                    Get your home and business ready for the holidays with our seasonal collection of wreaths. Made with love by your local San Antonio creatives
+                </p>
+                <a href="/store" class="mt-8 inline-block rounded-md border border-transparent bg-white py-3 px-8 text-base font-medium text-gray-900 hover:bg-gray-100">
+                   Shop the collection 
+                </a>
             </div>
         </div>
     </main>
 
-    <main className="mx-auto mt-16 max-w-7xl px-4 sm:mt-24 sm:px-6 lg:pt-10 lg:pb-10">
+    <main className="mx-auto mt-16 max-w-7xl px-4 sm:mt-24 sm:px-6">
         <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             <div className="sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:text-left">
                 <h1>
                     <span className="mt-1 block text-4xl font-bold tracking-tight sm:text-5xl xl:text-6xl">
-                    <span className="block text-gray-900">Your Home</span>
-                    <span className="block text-gray-500">Your Business</span>
+                    <span className="block text-sky-500 ">VIVA Wreaths</span>
+                    <span className="block text-gray-900">adding some life to your home</span>
                     </span>
                 </h1>
-                <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                    VIVA Wreaths are a fun, unique and beautiful way to decorate your home or business. Made locally in San Antonio, we offer a variety of wreaths to suit your mood, style and love for the local community.
+                <p className="mt-3 text-base text-gray-600 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+                    Viva Wreaths are a fun, unique and beautiful way to decorate your home or business. Made locally in San Antonio, we offer a variety of wreaths to suit your mood, style and love for the local community.
                 </p>
                 <div className="mt-8 sm:mx-auto sm:max-w-lg sm:text-center lg:mx-0 lg:text-left">
                     <p className="text-base font-medium text-gray-900">
@@ -227,6 +177,83 @@ export default function Nav() {
             </div>
         </div>
     </main>
+
+    <main className="bg-white md:mt-16">
+        <div className="overflow-hidden pt-32 sm:pt-14">
+            <div className="bg-slate-100">
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div className="relative pt-48 pb-16 sm:pb-24">
+                        <div>
+                            <h2 id="sale-heading" className="text-4xl font-bold tracking-tight text-gray-900 md:text-5xl">
+                                <span className='text-indigo-600'>VIVA</span> Wreaths
+                                <br />
+                                Holday collection 2022
+                            </h2>
+                            <div className="mt-6 text-base">
+                                <a href="/store" className="font-semibold text-indigo-600">
+                                    Shop the collection <span aria-hidden="true"> &rarr;</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div className="absolute -top-32 left-1/2 -translate-x-1/2 transform sm:top-6 sm:translate-x-0">
+                            <div className="ml-24 flex min-w-max space-x-6 sm:ml-3 lg:space-x-8">
+                                <div className="flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
+                                    <div className="flex-shrink-0">
+                                        <img 
+                                            className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72" 
+                                            src="./wreath5.jpg" 
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div className="mt-6 flex-shrink-0 sm:mt-0">
+                                        <img 
+                                            className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72" 
+                                            src="./background.jpg" 
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <div className="flex space-x-6 sm:-mt-20 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
+                                    <div className="flex-shrink-0">
+                                        <img 
+                                            className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72" 
+                                            src="wreath6.jpg" 
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div className="mt-6 flex-shrink-0 sm:mt-0">
+                                        <img 
+                                            className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72" 
+                                            src="./wreath2.jpg" 
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <div className="flex space-x-6 sm:flex-col sm:space-x-0 sm:space-y-6 lg:space-y-8">
+                                    <div className="flex-shrink-0">
+                                        <img 
+                                            className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72" 
+                                            src="./thanksgiving.jpg" 
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div className="mt-6 flex-shrink-0 sm:mt-0">
+                                        <img 
+                                            className="h-64 w-64 rounded-lg object-cover md:h-72 md:w-72" 
+                                            src="./table2.jpg" 
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
     
     </>
   )

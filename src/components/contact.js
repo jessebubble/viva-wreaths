@@ -7,9 +7,9 @@ export default function Contact() {
     <>
       <Simple />
 
-      <main class="bg-white -mt-10 md:-mt-16 lg:-mt-20">
+      <main class="bg-white -mt-10 md:-mt-16 lg:-mt-24">
         {/* <!-- Header --> */}
-        <div class="relative bg-gray-800 pb-32">
+        <div class="relative bg-black pb-32">
             <div class="absolute inset-0">
                 <div class="absolute inset-0 bg-slate-500 mix-blend-multiply" aria-hidden="true"></div>
             </div>
