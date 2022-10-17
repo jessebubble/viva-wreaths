@@ -92,29 +92,130 @@ export default function Nav() {
         </div>
     </main>
 
-    <main class="bg-white">
-        <div class="relative bg-slate-900">
-            {/* <!-- Decorative image and overlay --> */}
-            <div aria-hidden="true" class="absolute inset-0 overflow-hidden">
-                <img 
-                    src="./wreath5.jpg" 
+    <main className="relative bg-white mb-10 md:mb-16">
+        {/*  <!-- Background image and overlap --> */}
+        <div aria-hidden="true" className="absolute inset-0 hidden sm:flex sm:flex-col">
+            <div className="relative w-full flex-1 bg-gray-800">
+                <div className="absolute inset-0 overflow-hidden">
+                    <img 
+                    src="./background.jpg" 
                     alt="" 
-                    class="h-full w-full object-cover object-center"
-                />
+                    className="h-full w-full object-cover object-center"
+                    />
+                </div>
+                <div className="absolute inset-0 bg-gray-900 opacity-70"></div>
             </div>
-            <div aria-hidden="true" class="absolute inset-0 bg-amber-800 opacity-60"></div>
-            <div class="relative mx-auto flex max-w-3xl flex-col items-center py-32 px-6 text-center sm:py-64 lg:px-0">
-                <h1 class="text-4xl font-bold tracking-tight text-white lg:text-6xl">
-                    Holiday wreaths are here
+            <div className="h-32 w-full bg-white md:h-40 lg:h-48"></div>
+        </div>
+        <div className="relative mx-auto max-w-3xl px-4 pb-96 text-center sm:px-6 sm:pb-0 lg:px-8">
+            {/* <!-- Background image and overlap --> */}
+            <div aria-hidden="true" className="absolute inset-0 flex flex-col sm:hidden">
+                <div className="relative w-full flex-1 bg-gray-800">
+                    <div className="absolute inset-0 overflow-hidden">
+                        <img 
+                            src="./background.jpg" 
+                            alt="" 
+                            className="h-full w-full object-cover object-center"
+                        />
+                    </div>
+                    <div className="absolute inset-0 bg-gray-900 opacity-60"></div>
+                </div>
+                <div className="h-48 w-full bg-white"></div>
+            </div>
+            <div className="relative py-32">
+                <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
+                    Holiday Season 2022
                 </h1>
                 <p class="mt-4 text-xl text-white">
-                    Get your home and business ready for the holidays with our seasonal collection of wreaths. Made with love by your local San Antonio creatives
+                    Get your home and business ready for the holidays with our seasonal collection of wreaths. Made with love by your local San Antonio creative.
                 </p>
-                <a href="/store" class="mt-8 inline-block rounded-md border border-transparent bg-white py-3 px-8 text-base font-medium text-gray-900 hover:bg-gray-100">
-                   Shop the collection 
-                </a>
+                <div className="mt-4 sm:mt-6">
+                    <a href="/store" className="inline-block rounded-md border border-transparent bg-indigo-600 py-3 px-8 font-medium text-white hover:bg-indigo-700">
+                    Shop Collection
+                    </a>
+                </div>
             </div>
         </div>
+        <section aria-labelledby="collection-heading" className="relative -mt-96 sm:mt-0">
+            <h2 id="collection-heading" className="sr-only">Collections</h2>
+            <div className="mx-auto grid max-w-md grid-cols-1 gap-y-6 px-4 sm:max-w-7xl sm:grid-cols-3 sm:gap-y-0 sm:gap-x-6 sm:px-6 lg:gap-x-8 lg:px-8">
+                <div className="group relative h-96 rounded-lg bg-white shadow-xl sm:aspect-w-4 sm:aspect-h-5 sm:h-auto">
+                    <div>
+                        <div aria-hidden="true" className="absolute inset-0 overflow-hidden rounded-lg">
+                            <div className="absolute inset-0 overflow-hidden group-hover:opacity-75">
+                                <img 
+                                    src="./wreath5.jpg" 
+                                    alt="wreath" 
+                                    className="h-full w-full object-cover object-center"
+                                />
+                            </div>
+                            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50"></div>
+                        </div>
+                        <div className="absolute inset-0 flex items-end rounded-lg p-6">
+                            <div>
+                                <p aria-hidden="true" className="text-sm text-white">Shop the collection</p>
+                                <h3 className="mt-1 font-semibold text-white">
+                                    <a href="/store">
+                                        <span className="absolute inset-0"></span>
+                                        Halloween
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="group relative h-96 rounded-lg bg-white shadow-xl sm:aspect-w-4 sm:aspect-h-5 sm:h-auto">
+                    <div>
+                        <div aria-hidden="true" className="absolute inset-0 overflow-hidden rounded-lg">
+                            <div className="absolute inset-0 overflow-hidden group-hover:opacity-75">
+                                <img 
+                                    src="./thanksgiving.jpg" 
+                                    alt="wreath" 
+                                    className="h-full w-full object-cover object-center"
+                                />
+                            </div>
+                            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50"></div>
+                        </div>
+                        <div className="absolute inset-0 flex items-end rounded-lg p-6">
+                            <div>
+                                <p aria-hidden="true" className="text-sm text-white">Shop the collection</p>
+                                <h3 className="mt-1 font-semibold text-white">
+                                    <a href="/store">
+                                        <span className="absolute inset-0"></span>
+                                        Thanksgiving
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="group relative h-96 rounded-lg bg-white shadow-xl sm:aspect-w-4 sm:aspect-h-5 sm:h-auto">
+                    <div>
+                        <div aria-hidden="true" className="absolute inset-0 overflow-hidden rounded-lg">
+                            <div className="absolute inset-0 overflow-hidden group-hover:opacity-75">
+                                <img 
+                                    src="./christmas.jpg" 
+                                    alt="wreath" 
+                                    className="h-full w-full object-cover object-center"
+                                />
+                            </div>
+                            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50"></div>
+                        </div>
+                        <div className="absolute inset-0 flex items-end rounded-lg p-6">
+                            <div>
+                                <p aria-hidden="true" className="text-sm text-white">Shop the collection</p>
+                                <h3 className="mt-1 font-semibold text-white">
+                                    <a href="/store">
+                                        <span className="absolute inset-0"></span>
+                                        Christmas
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <main className="mx-auto mt-16 max-w-7xl px-4 sm:mt-24 sm:px-6">
@@ -122,8 +223,8 @@ export default function Nav() {
             <div className="sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:text-left">
                 <h1>
                     <span className="mt-1 block text-4xl font-bold tracking-tight sm:text-5xl xl:text-6xl">
-                    <span className="block text-sky-500 ">VIVA Wreaths</span>
-                    <span className="block text-gray-900">adding some life to your home and business</span>
+                    <span className="block text-sky-500 "></span>
+                    <span className="block text-gray-900">Adding some life to your home and business</span>
                     </span>
                 </h1>
                 <p className="mt-3 text-base text-gray-600 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
@@ -163,7 +264,7 @@ export default function Nav() {
                         <span className="sr-only">Watch our future video </span>
                         <img 
                             className="w-full" 
-                            src='./thanksgiving.jpg' 
+                            src='./table3.jpg' 
                             alt=""
                         />
                         {/* <span className="absolute inset-0 flex h-full w-full items-center justify-center" aria-hidden="true">
@@ -178,7 +279,7 @@ export default function Nav() {
         </div>
     </main>
 
-    <main className="bg-white mt-10 md:mt-16">
+    {/* <main className="bg-white mt-10 md:mt-16">
         <div className="overflow-hidden pt-32 sm:pt-14">
             <div className="bg-slate-100">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -251,10 +352,8 @@ export default function Nav() {
                 </div>
             </div>
         </div>
-    </main>
+    </main> */}
 
-    
-    
     </>
   )
 }
