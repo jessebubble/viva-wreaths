@@ -26,10 +26,10 @@ export default function Footer() {
                 </div>
                 <div className="mt-8 md:order-1 md:mt-0">
                     <p className="text-center text-base text-gray-400">
-                        &copy; 2022 VIVA WREATHS, website by viva web design
+                        &copy; 2022 VIVA WREATHS, site by viva web design
                     </p>
                 </div>
-                <div className=''> 
+                <div className='mt-6 md:mt-0'> 
                     <Player
                     src='https://assets4.lottiefiles.com/private_files/lf30_coq62jw5.json'
                     className='md:w-15 w-16'

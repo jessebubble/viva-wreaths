@@ -180,7 +180,7 @@ export default function Nav() {
                             <div>
                                 <p aria-hidden="true" className="text-sm text-white">Shop the collection</p>
                                 <h3 className="mt-1 font-semibold text-white">
-                                    <a href="/store">
+                                    <a href="/comingsoon">
                                         <span className="absolute inset-0"></span>
                                         Thanksgiving
                                     </a>
@@ -205,7 +205,7 @@ export default function Nav() {
                             <div>
                                 <p aria-hidden="true" className="text-sm text-white">Shop the collection</p>
                                 <h3 className="mt-1 font-semibold text-white">
-                                    <a href="/store">
+                                    <a href="/comingsoon">
                                         <span className="absolute inset-0"></span>
                                         Christmas
                                     </a>

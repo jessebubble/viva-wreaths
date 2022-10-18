@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Contact from './components/contact';
 import Store from './components/store';
 import Checkout from './components/checkout';
+import ComingSoon from './components/comingsoon';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,6 +17,7 @@ root.render(
         <Route path="/contact" element={<Contact />} />
         <Route path="/store" element={<Store />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="/comingsoon" element={<ComingSoon />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

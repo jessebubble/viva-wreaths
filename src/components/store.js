@@ -56,13 +56,13 @@ export default function Store() {
                                 <p className="text-base font-medium text-gray-900">{product.price}</p>
                             </div>
                         </div>
-                        <div class="mt-6">
+                        {/* <div class="mt-6">
                             <a 
                                 href="/checkout" 
                                 class="relative flex items-center justify-center rounded-md border border-transparent bg-gray-100 py-2 px-8 text-sm font-medium text-gray-900 hover:bg-gray-200">
                                     Add to cart <span class="sr-only">, Wreaths</span>
                             </a>
-                        </div>
+                        </div> */}
                     </div>
                 ))}
             </div>
