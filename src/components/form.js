@@ -41,17 +41,21 @@ export default function Form() {
                             </div>
                             <div className="mt-3">
                                 <dt className="sr-only">Social</dt>
-                                <dd className="flex">
-                                    <FiInstagram className='h-6 w-6 text-slate-100' />
-                                    <span className="ml-3">@vivawreaths</span>
-                                </dd>
+                                <a href='https://www.instagram.com/viva_wreaths/'>
+                                    <dd className="flex">
+                                        <FiInstagram className='h-6 w-6 text-slate-100' />
+                                        <span className="ml-3">@viva_wreaths</span>
+                                    </dd>
+                                </a>
                             </div>
                             <div className="mt-3">
                                 <dt className="sr-only">Social</dt>
-                                <dd className="flex">
-                                    <FiFacebook className='h-6 w-6 text-slate-100' />
-                                    <span className="ml-3">@vivawreaths</span>
-                                </dd>
+                                <a href='https://www.facebook.com/profile.php?id=100086647804720'>
+                                    <dd className="flex">
+                                        <FiFacebook className='h-6 w-6 text-slate-100' />
+                                        <span className="ml-3">@viva_wreaths</span>
+                                    </dd>
+                                </a>
                             </div>
                             <div className="mt-6">
                             <dt className="sr-only">Social</dt>

@@ -1,7 +1,17 @@
 import { ReactComponent as Banner} from '../banner.svg'
-import { Menu, Transition } from '@headlessui/react';
+import { Menu, Transition, Dialog } from '@headlessui/react';
+import { Fragment, useState } from 'react';
         
-export default function Simple() {  
+export default function Nav() {  
+    let [isOpen, setIsOpen] = useState(false);
+
+    function closeModal() {
+        setIsOpen(false);
+    }
+
+   /*  function openModal() {
+        setIsOpen(true);
+    } */
 
     return (
         <>
@@ -54,22 +64,97 @@ export default function Simple() {
                                                         <a href="/store" className={`${active && 'font-medium hover:text-white'}`}>Let's go shopping</a>
                                                     )}
                                                 </Menu.Item>
+                                                <Menu.Item className='text-gray-100 font-medium'>
+                                                    {({ active }) => (
+                                                        <a href="/events" className={`${active && 'font-medium hover:text-white'}`}>In-person events</a>
+                                                    )}
+                                                </Menu.Item>
                                             </Menu.Items>
                                         </Transition>
                                     </Menu>
                                 </div>
                             </div>
                             <div className="hidden md:ml-10 md:block md:space-x-10">
-                                <span className="inline-flex">
-                                    <a href="/store" className="inline-flex items-center text-base tracking-tight antialiased font-medium text-indigo-600 hover:text-white hover:border-b-2 hover:border-indigo-400">
-                                        Shop Collection
-                                    </a>
-                                </span>
                                 <span className="inline-flex ">
                                     <a href="/contact" className="inline-flex items-center text-base tracking-tight antialiased font-medium text-gray-100 hover:text-white hover:border-b-2 hover:border-indigo-600">
                                         Contact Us
                                     </a>
                                 </span>
+                                <span className="inline-flex ">
+                                    <a href="/events" className="inline-flex items-center text-base tracking-tight antialiased font-medium text-gray-100 hover:text-white hover:border-b-2 hover:border-indigo-600">
+                                        Market Days
+                                    </a>
+                                </span>
+                                <span className="inline-flex">
+                                    <a href="/store" className="inline-flex items-center text-base tracking-tight antialiased font-medium text-indigo-500 hover:text-white hover:border-b-2 hover:border-indigo-400">
+                                        Shop Collection
+                                    </a>
+                                </span>
+                                <div className="md:absolute md:inset-y-0 md:right-0 md:flex md:items-center md:justify-end">
+                                    <button 
+                                        type="button" 
+                                        /* onClick={openModal} */
+                                        class="inline-flex items-center gap-2 rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                                        {/* <!-- Heroicon name: shopping-bag --> */}
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                                        </svg>
+                                            Shopping Cart
+                                    </button>
+                                </div>
+                                <Transition appear show={isOpen} as={Fragment}>
+                                    <Dialog as="div" className="relative z-10" onClose={closeModal}>
+                                        <Transition.Child
+                                            as={Fragment}
+                                            enter="ease-out duration-300"
+                                            enterFrom="opacity-0"
+                                            enterTo="opacity-100"
+                                            leave="ease-in duration-200"
+                                            leaveFrom="opacity-100"
+                                            leaveTo="opacity-0"
+                                        >
+                                            <div className="fixed inset-0 bg-black bg-opacity-25" />
+                                        </Transition.Child>
+
+                                        <div className="fixed inset-0 overflow-y-auto">
+                                            <div className="flex min-h-full items-center justify-center p-4 text-center">
+                                                <Transition.Child
+                                                    as={Fragment}
+                                                    enter="ease-out duration-300"
+                                                    enterFrom="opacity-0 scale-95"
+                                                    enterTo="opacity-100 scale-100"
+                                                    leave="ease-in duration-200"
+                                                    leaveFrom="opacity-100 scale-100"
+                                                    leaveTo="opacity-0 scale-95">
+
+                                                    <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                                                        <Dialog.Title
+                                                            as="h3"
+                                                            className="text-lg font-medium leading-6 text-gray-900"
+                                                            > Ready to checkout?
+                                                        </Dialog.Title>
+                                                        <div className="mt-2">
+                                                            <p className="text-sm text-gray-500">
+                                                                Viva Wreaths payment processing powered by Stripe
+                                                            </p>
+                                                        </div>
+                                                        <div className="mt-4">
+                                                            <button
+                                                                type="button"
+                                                                className="inline-flex items-center justify-center gap-2 rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                                                                onClick={closeModal}
+                                                                > Continue to checkout
+                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                                                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
+                                                                </svg>    
+                                                            </button>
+                                                        </div>
+                                                    </Dialog.Panel>
+                                                </Transition.Child>
+                                            </div>
+                                        </div>
+                                    </Dialog>
+                                </Transition>
                             </div>
                         </div>
                     </nav>           
@@ -77,5 +162,5 @@ export default function Simple() {
             </div>
         </main>
         </>
-    )
+    );
 }

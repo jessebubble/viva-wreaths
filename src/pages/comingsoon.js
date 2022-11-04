@@ -1,11 +1,11 @@
-import Simple from './nav';
-import Footer from './footer';
+import Nav from '../components/nav';
+import Footer from '../components/footer';
 import { Player } from '@lottiefiles/react-lottie-player';
 
 export default function ComingSoon() {
     return (
         <>
-        <Simple />
+        <Nav />
 
         <main className='bg-black -mt-10 md:-mt-16'>
             <div className='max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8'>
@@ -27,6 +27,7 @@ export default function ComingSoon() {
                 </div>
             </div>      
         </main>
+        
         <Footer />
         </>
     );
