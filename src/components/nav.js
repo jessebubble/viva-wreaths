@@ -61,12 +61,12 @@ export default function Nav() {
                                                 </Menu.Item>
                                                 <Menu.Item className='text-sky-500 font-medium'>
                                                     {({ active }) => (
-                                                        <a href="/store" className={`${active && 'font-medium hover:text-white'}`}>Let's go shopping</a>
+                                                        <a href="/store" className={`${active && 'font-medium hover:text-white'}`}>Shop Collection</a>
                                                     )}
                                                 </Menu.Item>
                                                 <Menu.Item className='text-gray-100 font-medium'>
                                                     {({ active }) => (
-                                                        <a href="/events" className={`${active && 'font-medium hover:text-white'}`}>In-person events</a>
+                                                        <a href="/events" className={`${active && 'font-medium hover:text-white'}`}>Market Days</a>
                                                     )}
                                                 </Menu.Item>
                                             </Menu.Items>

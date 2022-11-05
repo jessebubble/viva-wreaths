@@ -5,37 +5,37 @@ const meetings = [
     id: 1,
     date: 'November 12th, 2022',
     time: '10:00 AM - 4:00 PM',
-    location: 'Bandera Market',
+    location: 'Bandera Market - 11851 Bandera Rd, 78023',
   },
   {
     id: 1,
     date: 'November 13th, 2022',
     time: '11:00 AM - 4:00 PM',
-    location: 'Bandera Market',
+    location: 'Bandera Market - 11851 Bandera Rd, 78023',
   },
   {
     id: 1,
     date: 'November 18th, 2022',
     time: '4:00 PM - 8:00 PM',
-    location: 'Bandera Market',
+    location: 'Bandera Market - 11851 Bandera Rd, 78023',
   },
   {
     id: 1,
     date: 'November 19th, 2022',
     time: '10:00 AM - 4:00 PM',
-    location: 'Bandera Market',
+    location: 'Bandera Market - 11851 Bandera Rd, 78023',
   },
   {
     id: 1,
     date: 'November 26th, 2022',
     time: '10:00 AM - 4:00 PM',
-    location: 'Bandera Market',
+    location: 'Bandera Market - 11851 Bandera Rd, 78023',
   },
   {
     id: 1,
     date: 'November 27th, 2022',
     time: '11:00 AM - 4:00 PM',
-    location: 'Bandera Market',
+    location: 'Bandera Market - 11851 Bandera Rd, 78023',
   },
 ]
 const days = [
