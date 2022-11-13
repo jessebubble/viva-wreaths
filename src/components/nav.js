@@ -1,4 +1,4 @@
-import { ReactComponent as Banner} from '../banner.svg'
+import { ReactComponent as Logo} from '../viva.svg'
 import { Menu, Transition, Dialog } from '@headlessui/react';
 import { Fragment, useState } from 'react';
         
@@ -15,30 +15,31 @@ export default function Nav() {
 
     return (
         <>
-        <main className="relative overflow-hidden bg-black">
-            <div className="hidden lg:absolute lg:inset-0 lg:block" aria-hidden="true">
-                <svg className="absolute top-0 left-1/2 translate-x-64 -translate-y-8 transform" width="640" height="784" fill="none" viewBox="0 0 640 784">
-                    <defs>
-                        <pattern id="9ebea6f4-a1f5-4d96-8c4e-4c2abf658047" x="118" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                            <rect x="0" y="0" width="4" height="4" className="text-white" fill="currentColor" />
-                        </pattern>
-                    </defs>
-                    <rect y="72" width="640" height="640" className="text-black" fill="currentColor" />
-                    <rect x="118" width="404" height="784" fill="url(#9ebea6f4-a1f5-4d96-8c4e-4c2abf658047)" />
+    
+        <main class="isolate bg-slate-900">
+            <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
+                <svg class="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]" viewBox="0 0 1155 678" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill="url(#45de2b6b-92d5-4d68-a6a0-9b9b2abad533)" fill-opacity=".3" d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z" />
+                <defs>
+                    <linearGradient id="45de2b6b-92d5-4d68-a6a0-9b9b2abad533" x1="1155.49" x2="-78.208" y1=".177" y2="474.645" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#9089FC"></stop>
+                    <stop offset="1" stop-color="#FF80B5"></stop>
+                    </linearGradient>
+                </defs>
                 </svg>
             </div>
             <div className="relative pt-6 pb-16 sm:pb-24 lg:pb-32">
                 <div>
-                    <nav className="relative mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6" aria-label="Global">
-                        <div className="flex flex-1 items-center">
-                            <div className="flex flex-col w-full items-center justify-between md:w-auto">
+                    <nav className="relative mx-auto flex max-w-7xl items-center px-4 sm:px-6" aria-label="Global">
+                        <div className="flex flex-1 items-center justify-between">
+                            <div className="flex flex-col w-full items-center md:w-auto">
                                 <a href="/">
                                     <span className="sr-only">Viva Wreaths</span>
-                                    <Banner className='w-44 md:w-40 lg:w-36 h-full'/>
+                                    <Logo className='w-full md:w-60 lg:w-32 h-full'/>
                                 </a>
                                 <div className="-mr-2 flex items-center md:hidden">
                                     <Menu>
-                                        <Menu.Button type="button" className="mt-6 inline-flex items-center justify-center rounded-md border border-gray-900 bg-white p-2 text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-900" aria-expanded="false">
+                                        <Menu.Button type="button" className="inline-flex items-center justify-center rounded-md border border-gray-900 bg-white p-3 text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-900" aria-expanded="false">
                                             <span className="sr-only">Open main menu</span>
                                             {/*  <!-- Heroicon name: outline/bars-3 --> */}
                                             <svg className="h-6 w-6 text-gray-900" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -54,11 +55,6 @@ export default function Nav() {
                                             leaveTo='opacity-0 scale-95'
                                         >
                                             <Menu.Items className="inline-flex flex-col items-start p-6 gap-1">
-                                                <Menu.Item className='text-gray-100 font-medium'>
-                                                    {({ active }) => (
-                                                        <a href="/contact" className={`${active && 'font-medium hover:text-white'}`}>Contact us</a>
-                                                    )}
-                                                </Menu.Item>
                                                 <Menu.Item className='text-sky-500 font-medium'>
                                                     {({ active }) => (
                                                         <a href="/store" className={`${active && 'font-medium hover:text-white'}`}>Shop Collection</a>
@@ -74,34 +70,17 @@ export default function Nav() {
                                     </Menu>
                                 </div>
                             </div>
-                            <div className="hidden md:ml-10 md:block md:space-x-10">
+                            <div className="hidden md:ml-10 md:block md:space-x-10 ">
                                 <span className="inline-flex ">
-                                    <a href="/contact" className="inline-flex items-center text-base tracking-tight antialiased font-medium text-gray-100 hover:text-white hover:border-b-2 hover:border-indigo-600">
-                                        Contact Us
-                                    </a>
-                                </span>
-                                <span className="inline-flex ">
-                                    <a href="/events" className="inline-flex items-center text-base tracking-tight antialiased font-medium text-gray-100 hover:text-white hover:border-b-2 hover:border-indigo-600">
+                                    <a href="/events" className="inline-flex items-center text-base tracking-tight antialiased font-medium text-gray-100 hover:text-gray-400 hover:border-b-2 hover:border-indigo-600">
                                         Market Days
                                     </a>
                                 </span>
                                 <span className="inline-flex">
-                                    <a href="/store" className="inline-flex items-center text-base tracking-tight antialiased font-medium text-indigo-500 hover:text-white hover:border-b-2 hover:border-indigo-400">
+                                    <a href="/store" className="inline-flex items-center text-base tracking-tight antialiased font-medium text-indigo-500 hover:text-gray-400 hover:border-b-2 hover:border-indigo-400">
                                         Shop Collection
                                     </a>
                                 </span>
-                                <div className="md:absolute md:inset-y-0 md:right-0 md:flex md:items-center md:justify-end">
-                                    <button 
-                                        type="button" 
-                                        /* onClick={openModal} */
-                                        class="inline-flex items-center gap-2 rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                                        {/* <!-- Heroicon name: shopping-bag --> */}
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                                            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-                                        </svg>
-                                            Shopping Cart
-                                    </button>
-                                </div>
                                 <Transition appear show={isOpen} as={Fragment}>
                                     <Dialog as="div" className="relative z-10" onClose={closeModal}>
                                         <Transition.Child

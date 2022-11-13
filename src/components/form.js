@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { FiInstagram, FiFacebook, FiMail } from "react-icons/fi";
-import { ReactComponent as Banner} from '../banner.svg'
 
 
 export default function Form() {
@@ -20,18 +19,18 @@ export default function Form() {
     };
 
     return (
-        <main className="relative bg-black pb-6 md:pb-10 md:pt-10 pt-6">
+        <main className="relative bg-slate-900 pb-6 pt-6">
             <div className="absolute inset-0">
-                <div className="absolute inset-y-0 left-0 w-1/2 bg-black"></div>
+                <div className="absolute inset-y-0 left-0 w-1/2 bg-slate-900"></div>
             </div>
             <div className="relative mx-auto max-w-7xl lg:grid lg:grid-cols-5">
-                <div className="bg-black rounded py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
+                <div className="bg-slate-900 rounded py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
                     <div className="mx-auto max-w-lg">
-                        <h2 className="text-2xl font-bold tracking-tight text-fuchsia-600 sm:text-3xl">Let's Connect</h2>
+                        <h2 className="text-2xl font-bold tracking-tight text-fuchsia-500 sm:text-3xl">Let's Connect</h2>
                         <p className="mt-3 text-lg leading-6 text-gray-500">
                             We'd love to hear from you. Send us a message and we'll get back to you as soon as possible.
                         </p>
-                        <dl className="mt-8 text-base text-emerald-400">
+                        <dl className="mt-8 text-base text-sky-500">
                             <div className="mt-6">
                                 <dt className="sr-only">Email</dt>
                                 <dd className="flex">
@@ -57,17 +56,10 @@ export default function Form() {
                                     </dd>
                                 </a>
                             </div>
-                            <div className="mt-6">
-                            <dt className="sr-only">Social</dt>
-                            <dd className="flex">
-                                <Banner className='w-44 md:w-40 lg:w-36 h-full'/>
-                                <span className="ml-3"></span>
-                            </dd>
-                        </div>
                         </dl>
                     </div>
                 </div>
-                <div className="bg-black rounded py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
+                <div className="bg-slate-900 rounded py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
                     <div className="mx-auto max-w-lg lg:max-w-none">
                         <form ref={form} onSubmit={sendEmail} className="grid grid-cols-1 gap-y-6">
                             <div>
@@ -111,7 +103,7 @@ export default function Form() {
                                 </textarea>
                             </div>
                             <div>
-                                <button type="submit" id="button" className="inline-flex justify-center rounded-md border border-transparent bg-fuchsia-600 py-3 px-6 text-base font-medium text-white shadow-sm hover:bg-emerald-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                                <button type="submit" id="button" className="inline-flex justify-center rounded-md border border-transparent bg-fuchsia-500 py-3 px-6 text-base font-medium text-white shadow-sm hover:bg-sky-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
                                     Submit
                                 </button>
                             </div>
@@ -120,6 +112,5 @@ export default function Form() {
                 </div>
             </div>
         </main>
-
     )
 }

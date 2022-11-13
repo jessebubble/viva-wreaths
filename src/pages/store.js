@@ -7,7 +7,6 @@ import Footer from '../components/footer'
 import Testimonial from '../components/testimonial.js';
 import Form from '../components/form.js';
 
-
 const builder = imageUrlBuilder(sanityClient)
 function urlFor(source) {
     return builder.image(source)
@@ -35,12 +34,53 @@ export default function Store() {
     return (
     <>
     <Nav />
-    <Testimonial />
 
-    <main className="bg-slate-100 ">
+    <main className="relative bg-white md:-mt-32 md:border-t md:border-white">
+        {/*  <!-- Background image and overlap --> */}
+        <div aria-hidden="true" className="absolute inset-0 hidden sm:flex sm:flex-col">
+            <div className="relative w-full flex-1 bg-slate-800">
+                <div className="absolute inset-0 overflow-hidden">
+                    <img 
+                    src="./gradient.jpg" 
+                    alt="gradient background" 
+                    className="h-full w-full object-cover object-center"
+                    />
+                </div>
+                <div className="absolute inset-0 bg-slate-600 opacity-70"></div>
+            </div>
+            <div className="h-32 w-full bg-white md:h-40 lg:h-48"></div>
+        </div>
+        <div className="relative mx-auto max-w-3xl px-4 pb-96 text-center sm:px-6 sm:pb-0 lg:px-8">
+            {/* <!-- Background image and overlap --> */}
+            <div aria-hidden="true" className="absolute inset-0 flex flex-col sm:hidden">
+                <div className="relative w-full flex-1 bg-slate-800">
+                    <div className="absolute inset-0 overflow-hidden">
+                        <img 
+                            src="./gradient.jpg" 
+                            alt="gradient background" 
+                            className="h-full w-full object-cover object-center"
+                        />
+                    </div>
+                    <div className="absolute inset-0 bg-gray-900 opacity-60"></div>
+                </div>
+                <div className="h-48 w-full bg-white"></div>
+            </div>
+            <div className="relative mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 -mb-40 md:-mb-36">
+                <div className="relative py-32">
+                    <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
+                        <span className="block">Holiday Collection 2022</span>
+                    </h2>
+                    <p className="mt-4 text-xl text-gray-400">
+                        <span className="block">
+                            Get your home and business ready for the holidays with our seasonal collection of wreaths. Made with love locally in San Antonio.                      
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
         <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
             <h2 className="sr-only">Products</h2>
-            <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-8">
+            <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-8 -mt-40 md:-mt-0">
                 {allProduct && allProduct.map((product) => ( 
                     <div className="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white">
                         <div className="aspect-w-3 aspect-h-3 bg-gray-200 group-hover:opacity-75 sm:aspect-1 sm:h-80">
@@ -74,6 +114,7 @@ export default function Store() {
         </div>
     </main>
 
+    <Testimonial />
     <Form />
     <Footer />
     </>

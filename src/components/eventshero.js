@@ -82,7 +82,7 @@ function classNames(...classes) {
 
 export default function EventsHero() {
     return (
-        <main className='relative bg-white lg:-mt-24 p-6 md:p-10 lg:p-16'>
+        <main className='relative bg-white lg:-mt-32 p-6 md:p-10 lg:p-16'>
             <h2 className="text-xl md:text-2xl lg:text-4xl font-medium text-gray-900">
                 Upcoming Market Days
             </h2>

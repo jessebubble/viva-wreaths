@@ -1,6 +1,6 @@
 export default function Testimonial() {
     return (
-      <section className="overflow-hidden bg-gray-50 py-12 md:py-20 lg:py-24 lg:-mt-24 relative">
+      <section className="overflow-hidden bg-white py-12 md:py-20 lg:py-24 lg:-mt-24 relative">
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <svg
             className="absolute top-full right-full translate-x-1/3 -translate-y-1/4 transform lg:translate-x-1/2 xl:-translate-y-1/2"
@@ -9,9 +9,9 @@ export default function Testimonial() {
             fill="none"
             viewBox="0 0 404 404"
             role="img"
-            aria-labelledby="svg-workcation"
+            aria-labelledby="svg-testimonial"
           >
-            <title id="svg-workcation">Workcation</title>
+            <title id="svg-testimonial">Testimonial</title>
             <defs>
               <pattern
                 id="ad119f34-7694-4c31-947f-5c9d249b21f3"
@@ -31,8 +31,8 @@ export default function Testimonial() {
             <blockquote className="mt-10">
               <div className="mx-auto max-w-3xl text-center text-2xl font-medium leading-9 text-gray-900">
                 <p>
-                    We love our history and are excited to share a piece of our culture with you through our wreaths. 
-                    We're proud to be a part of the community and look forward to sharing our passion with you.
+                  We're always looking to collaborate with our community and test our creativity. 
+                  Use our form below to inquire about custom wreaths that we can create for your home or business.
                 </p>
               </div>
               <footer className="mt-8">
