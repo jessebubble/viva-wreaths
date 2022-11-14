@@ -7,18 +7,18 @@ export default function NavHero() {
         <>
         <Nav />
 
-        <main className="relative bg-white mb-10 md:mb-16 md:-mt-24 lg:-mt-32 lg:border-t lg:border-white">
+        <main className="relative bg-white md:mb-10 md:-mt-24 lg:-mt-32 md:border-t md:border-white">
             {/*  <!-- Background image and overlap --> */}
             <div aria-hidden="true" className="absolute inset-0 hidden sm:flex sm:flex-col">
                 <div className="relative w-full flex-1 bg-slate-800">
                     <div className="absolute inset-0 overflow-hidden">
                         <img 
-                        src="./landing.jpg" 
+                        src="./store1.jpg" 
                         alt="christmas tree" 
                         className="h-full w-full object-cover object-center"
                         />
                     </div>
-                    <div className="absolute inset-0 bg-slate-900 opacity-70"></div>
+                    <div className="absolute inset-0 bg-slate-600 opacity-70"></div>
                 </div>
                 <div className="h-32 w-full bg-white md:h-40 lg:h-48"></div>
             </div>
@@ -28,12 +28,12 @@ export default function NavHero() {
                     <div className="relative w-full flex-1 bg-slate-800">
                         <div className="absolute inset-0 overflow-hidden">
                             <img 
-                                src="./landing.jpg" 
+                                src="./store1.jpg" 
                                 alt="christmas tree" 
                                 className="h-full w-full object-cover object-center"
                             />
                         </div>
-                        <div className="absolute inset-0 bg-gray-900 opacity-60"></div>
+                        <div className="absolute inset-0 bg-slate-900 opacity-60"></div>
                     </div>
                     <div className="h-48 w-full bg-white"></div>
                 </div>
