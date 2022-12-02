@@ -28,7 +28,8 @@ export default function Form() {
                     <div className="mx-auto max-w-lg">
                         <h2 className="text-2xl font-bold tracking-tight text-fuchsia-500 sm:text-3xl">Let's Connect</h2>
                         <p className="mt-3 text-lg leading-6 text-gray-500">
-                            We'd love to hear from you. Send us a message and we'll get back to you as soon as possible.
+                            We're always looking to collaborate with our local community. 
+                            Use our form below to inquire about custom wreaths that we can create for your home or business.
                         </p>
                         <dl className="mt-8 text-base text-sky-500">
                             <div className="mt-6">

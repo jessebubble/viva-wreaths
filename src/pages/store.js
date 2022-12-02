@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Nav from '../components/nav'
 import Footer from '../components/footer'
-import Testimonial from '../components/testimonial.js';
 import Form from '../components/form.js';
 
 const builder = imageUrlBuilder(sanityClient)
@@ -35,33 +34,20 @@ export default function Store() {
     <>
     <Nav />
 
-    <main className="relative bg-white md:-mt-32 md:border-t md:border-white">
-        {/*  <!-- Background image and overlap --> */}
-        <div aria-hidden="true" className="absolute inset-0 hidden sm:flex sm:flex-col">
-            <div className="relative w-full flex-1 bg-slate-800">
-                <div className="absolute inset-0 overflow-hidden">
-                    <img 
-                    src="./store1.jpg" 
-                    alt="gradient background" 
-                    className="h-full w-full object-cover object-center"
-                    />
-                </div>
-                <div className="absolute inset-0 bg-slate-900 opacity-80"></div>
-            </div>
-            <div className="h-32 w-full bg-white md:h-40 lg:h-48"></div>
-        </div>
-        <div className="relative mx-auto max-w-3xl px-4 pb-96 text-center sm:px-6 sm:pb-0 lg:px-8">
+    <main className="relative bg-white md:bg-gradient-to-b from-slate-900 via-slate-50 to-white md:-mt-24 lg:-mt-32">
+        {/*  <!-- Background image and overlap --> */} 
+        <div className="relative mx-auto max-w-3xl px-4 pb-72 text-center sm:px-6 sm:pb-0 lg:px-8">
             {/* <!-- Background image and overlap --> */}
             <div aria-hidden="true" className="absolute inset-0 flex flex-col sm:hidden">
-                <div className="relative w-full flex-1 bg-slate-800">
+                <div className="relative w-full flex-1 bg-slate-900">
                     <div className="absolute inset-0 overflow-hidden">
                         <img 
-                            src="./store1.jpg" 
-                            alt="gradient background" 
+                            src="https://tailwindui.com/img/component-images/grid-blur-purple-on-black.jpg" 
+                            alt="purple squares" 
                             className="h-full w-full object-cover object-center"
                         />
                     </div>
-                    <div className="absolute inset-0 bg-slate-900 opacity-60"></div>
+                    <div className="absolute inset-0 bg-slate-900 opacity-10"></div>
                 </div>
                 <div className="h-48 w-full bg-white"></div>
             </div>
@@ -114,7 +100,30 @@ export default function Store() {
         </div>
     </main>
 
-    <Testimonial />
+    <main className="bg-white">
+      <div className="mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+        <div className="relative overflow-hidden rounded-lg">
+          <div className="absolute inset-0">
+            <img src="./mini.jpg" alt="" className="w-full h-full object-cover object-top"/>
+          </div>
+          <div className="relative bg-slate-900 bg-opacity-50 py-32 px-6 sm:py-40 sm:px-12 lg:px-16">
+            <div className="relative mx-auto flex max-w-3xl flex-col items-center text-center">
+              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                <span className="block sm:inline">Market Days</span>
+              </h2>
+              <p className="mt-3 text-xl text-white">
+                We love being part of the local art, craft and market day community. 
+                Click the button below for our schedule and find us at a local market near you!
+              </p>
+              <a href="/events" className="mt-8 block w-full rounded-md border border-transparent bg-white py-3 px-8 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto">
+                See our market day schedule
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <Form />
     <Footer />
     </>

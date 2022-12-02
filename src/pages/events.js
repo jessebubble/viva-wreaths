@@ -1,6 +1,7 @@
 import Nav from '../components/nav'
 import Footer from '../components/footer'
 import EventsHero from '../components/eventshero'
+import Form from '../components/form'
 
 export default function Events() {
   return (
@@ -8,32 +9,35 @@ export default function Events() {
       <Nav />
       <EventsHero />
 
-      <main class="bg-white">
-        <div class="relative bg-slate-900">
-            {/* <!-- Decorative image and overlay --> */}
-            <div aria-hidden="true" class="absolute inset-0 overflow-hidden">
-                <img 
-                    src="./table2.jpg" 
-                    alt="" 
-                    class="h-full w-full object-cover object-center"
-                />
-            </div>
-            <div aria-hidden="true" class="absolute inset-0 bg-gray-800 opacity-70"></div>
-            <div class="relative mx-auto flex max-w-3xl flex-col items-center py-32 px-6 text-center sm:py-64 lg:px-0">
-                <h1 class="text-4xl font-bold tracking-tight text-white lg:text-6xl">
-                    Holiday wreaths are here
-                </h1>
-                <p class="mt-4 text-xl text-white">
-                    Get your home and business ready for the holidays with our seasonal collection of wreaths. Made with love by your local San Antonio creatives
-                </p>
-                <a href="/store" class="mt-8 inline-block rounded-md border border-transparent bg-white py-3 px-8 text-base font-medium text-gray-900 hover:bg-gray-100">
-                   Shop the collection 
-                </a>
-            </div>
+      <main className="relative overflow-hidden bg-slate-900 pb-6 md:pb-20">
+        {/* Decorative background image and gradient */}
+        <div aria-hidden="true" className="absolute inset-0">
+          <div className="absolute inset-0 mx-auto max-w-7xl overflow-hidden xl:px-8">
+            <img
+              src="https://tailwindui.com/img/component-images/grid-blur-purple-on-black.jpg"
+              alt=""
+              className="h-full w-full object-cover object-center"
+            />
+          </div>
+          <div className="absolute inset-0 bg-slate-900 opacity-10"></div>
         </div>
-    </main>
+        <section
+          aria-labelledby="sale-heading"
+          className="relative mx-auto flex max-w-7xl flex-col items-center px-4 pt-32 text-center sm:px-6 lg:px-8"
+        >
+          <div className="mx-auto max-w-2xl lg:max-w-none">
+            <h2 id="sale-heading" className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+              Can't make it to one of our events?
+            </h2>
+            <p className="mx-auto mt-4 max-w-xl text-xl text-gray-400">
+              We can schedule a local delivery in San Antonio or ship your wreath to you.
+              Use our form below to send us a message and we can start discussing your options.
+            </p>
+          </div>
+        </section>
+      </main>
 
-      
+      <Form />      
       <Footer />
     </>
   )

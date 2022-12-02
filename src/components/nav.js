@@ -1,41 +1,19 @@
 import { ReactComponent as Logo} from '../viva.svg'
-import { Menu, Transition, Dialog } from '@headlessui/react';
-import { Fragment, useState } from 'react';
+import { Menu, Transition } from '@headlessui/react';
         
 export default function Nav() {  
-    let [isOpen, setIsOpen] = useState(false);
-
-    function closeModal() {
-        setIsOpen(false);
-    }
-
-   /*  function openModal() {
-        setIsOpen(true);
-    } */
 
     return (
         <>
-    
-        <main class="isolate bg-white md:bg-slate-800">
-            <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
-                <svg class="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]" viewBox="0 0 1155 678" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="url(#45de2b6b-92d5-4d68-a6a0-9b9b2abad533)" fill-opacity=".3" d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z" />
-                <defs>
-                    <linearGradient id="45de2b6b-92d5-4d68-a6a0-9b9b2abad533" x1="1155.49" x2="-78.208" y1=".177" y2="474.645" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#9089FC"></stop>
-                    <stop offset="1" stop-color="#FF80B5"></stop>
-                    </linearGradient>
-                </defs>
-                </svg>
-            </div>
-            <div className="relative pt-6 pb-16 sm:pb-24 lg:pb-32">
+        <main class="bg-slate-900">  
+            <div className="relative pt-3 pb-3 sm:pb-28">
                 <div>
-                    <nav className="relative mx-auto flex max-w-7xl items-center px-4 sm:px-6" aria-label="Global">
+                    <div className="relative mx-auto flex max-w-7xl items-center px-4 sm:px-6" aria-label="Global">
                         <div className="flex flex-1 items-center justify-between">
                             <div className="flex flex-col w-full items-center md:w-auto">
                                 <a href="/">
                                     <span className="sr-only">Viva Wreaths</span>
-                                    <Logo className='w-48 md:w-60 lg:w-32 h-full'/>
+                                    <Logo className='w-44 md:w-48 lg:w-36 h-full'/>
                                 </a>
                                 <div className="-mr-2 flex items-center md:hidden">
                                     <Menu>
@@ -60,9 +38,9 @@ export default function Nav() {
                                                         <a href="/store" className={`${active && 'font-medium hover:text-white'}`}>Shop Collection</a>
                                                     )}
                                                 </Menu.Item>
-                                                <Menu.Item className='text-gray-900 font-medium'>
+                                                <Menu.Item className='text-white font-medium'>
                                                     {({ active }) => (
-                                                        <a href="/events" className={`${active && 'font-medium hover:text-white'}`}>Market Days</a>
+                                                        <a href="/events" className={`${active && 'font-medium hover:text-sky-600'}`}>Market Days</a>
                                                     )}
                                                 </Menu.Item>
                                             </Menu.Items>
@@ -81,62 +59,9 @@ export default function Nav() {
                                         Shop Collection
                                     </a>
                                 </span>
-                                <Transition appear show={isOpen} as={Fragment}>
-                                    <Dialog as="div" className="relative z-10" onClose={closeModal}>
-                                        <Transition.Child
-                                            as={Fragment}
-                                            enter="ease-out duration-300"
-                                            enterFrom="opacity-0"
-                                            enterTo="opacity-100"
-                                            leave="ease-in duration-200"
-                                            leaveFrom="opacity-100"
-                                            leaveTo="opacity-0"
-                                        >
-                                            <div className="fixed inset-0 bg-black bg-opacity-25" />
-                                        </Transition.Child>
-
-                                        <div className="fixed inset-0 overflow-y-auto">
-                                            <div className="flex min-h-full items-center justify-center p-4 text-center">
-                                                <Transition.Child
-                                                    as={Fragment}
-                                                    enter="ease-out duration-300"
-                                                    enterFrom="opacity-0 scale-95"
-                                                    enterTo="opacity-100 scale-100"
-                                                    leave="ease-in duration-200"
-                                                    leaveFrom="opacity-100 scale-100"
-                                                    leaveTo="opacity-0 scale-95">
-
-                                                    <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
-                                                        <Dialog.Title
-                                                            as="h3"
-                                                            className="text-lg font-medium leading-6 text-gray-900"
-                                                            > Ready to checkout?
-                                                        </Dialog.Title>
-                                                        <div className="mt-2">
-                                                            <p className="text-sm text-gray-500">
-                                                                Viva Wreaths payment processing powered by Stripe
-                                                            </p>
-                                                        </div>
-                                                        <div className="mt-4">
-                                                            <button
-                                                                type="button"
-                                                                className="inline-flex items-center justify-center gap-2 rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                                                                onClick={closeModal}
-                                                                > Continue to checkout
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
-                                                                </svg>    
-                                                            </button>
-                                                        </div>
-                                                    </Dialog.Panel>
-                                                </Transition.Child>
-                                            </div>
-                                        </div>
-                                    </Dialog>
-                                </Transition>
                             </div>
                         </div>
-                    </nav>           
+                    </div>           
                 </div>
             </div>
         </main>
