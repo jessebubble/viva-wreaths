@@ -19,23 +19,23 @@ export default function Form() {
     };
 
     return (
-        <main className="relative bg-slate-900 pb-6 pt-6">
+        <main className="relative bg-slate-100 pb-6 pt-6">
             <div className="absolute inset-0">
-                <div className="absolute inset-y-0 left-0 w-1/2 bg-slate-900"></div>
+                <div className="absolute inset-y-0 left-0 w-1/2 bg-slate-100"></div>
             </div>
             <div className="relative mx-auto max-w-7xl lg:grid lg:grid-cols-5">
-                <div className="bg-slate-900 rounded py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
+                <div className="bg-slate-100 rounded py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
                     <div className="mx-auto max-w-lg">
                         <h2 className="text-2xl font-bold tracking-tight text-fuchsia-500 sm:text-3xl">Let's Connect</h2>
                         <p className="mt-3 text-lg leading-6 text-gray-500">
                             We're always looking to collaborate with our local community. 
                             Use our form below to inquire about custom wreaths that we can create for your home or business.
                         </p>
-                        <dl className="mt-8 text-base text-sky-500">
+                        <dl className="mt-8 text-base text-indigo-600">
                             <div className="mt-6">
                                 <dt className="sr-only">Email</dt>
                                 <dd className="flex">
-                                    <FiMail className='h-6 w-6 text-slate-100' />
+                                    <FiMail className='h-6 w-6 text-slate-600' />
                                     <span className="ml-3">info@vivawreaths.com</span>
                                 </dd>
                             </div>
@@ -43,7 +43,7 @@ export default function Form() {
                                 <dt className="sr-only">Social</dt>
                                 <a href='https://www.instagram.com/viva_wreaths/'>
                                     <dd className="flex">
-                                        <FiInstagram className='h-6 w-6 text-slate-100' />
+                                        <FiInstagram className='h-6 w-6 text-slate-600' />
                                         <span className="ml-3">@viva_wreaths</span>
                                     </dd>
                                 </a>
@@ -52,7 +52,7 @@ export default function Form() {
                                 <dt className="sr-only">Social</dt>
                                 <a href='https://www.facebook.com/profile.php?id=100086647804720'>
                                     <dd className="flex">
-                                        <FiFacebook className='h-6 w-6 text-slate-100' />
+                                        <FiFacebook className='h-6 w-6 text-slate-600' />
                                         <span className="ml-3">@viva_wreaths</span>
                                     </dd>
                                 </a>
@@ -60,7 +60,7 @@ export default function Form() {
                         </dl>
                     </div>
                 </div>
-                <div className="bg-slate-900 rounded py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
+                <div className="bg-slate-100 rounded py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
                     <div className="mx-auto max-w-lg lg:max-w-none">
                         <form ref={form} onSubmit={sendEmail} className="grid grid-cols-1 gap-y-6">
                             <div>

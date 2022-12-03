@@ -71,13 +71,13 @@ function classNames(...classes) {
 
 export default function EventsHero() {
     return (
-        <main className='relative bg-slate-900 p-6 md:p-10 lg:p-16 lg:-mt-16'>
-            <h2 className="text-xl md:text-2xl lg:text-4xl font-medium text-white">
+        <main className='relative bg-white p-6 md:p-10 lg:p-16 lg:-mt-16 md:mb-16'>
+            <h2 className="text-xl md:text-2xl lg:text-4xl font-medium text-gray-900">
                 Upcoming Market Days
             </h2>
             <div className="lg:grid lg:grid-cols-12 lg:gap-x-16">
                 <div className="mt-10 text-center lg:col-start-8 lg:col-end-13 lg:row-start-1 lg:mt-9 xl:col-start-9">
-                    <div className="flex items-center text-white">
+                    <div className="flex items-center text-gray-900">
                         <button
                             type="button"
                             className="-m-1.5 flex flex-none items-center justify-center p-1.5 text-gray-400 hover:text-gray-500">

@@ -1,11 +1,11 @@
 import { ReactComponent as Logo} from '../viva.svg'
 import { Menu, Transition } from '@headlessui/react';
         
-export default function Nav() {  
+export default function NavWhite() {  
 
     return (
         <>
-        <main class="bg-slate-900">  
+        <main class="bg-white">  
             <div className="relative pt-3 pb-3 sm:pb-28">
                 <div>
                     <div className="relative mx-auto flex max-w-7xl items-center px-4 sm:px-6" aria-label="Global">
@@ -33,12 +33,12 @@ export default function Nav() {
                                             leaveTo='opacity-0 scale-95'
                                         >
                                             <Menu.Items className="inline-flex flex-col items-start p-6 gap-1">
-                                                <Menu.Item className='text-white font-medium'>
+                                                <Menu.Item className='text-fuchsia-500 font-medium'>
                                                     {({ active }) => (
                                                         <a href="/events" className={`${active && 'font-medium hover:text-sky-600'}`}>Market Days</a>
                                                     )}
                                                 </Menu.Item>
-                                                <Menu.Item className='text-sky-600 font-medium'>
+                                                <Menu.Item className='text-sky-500 font-medium'>
                                                     {({ active }) => (
                                                         <a href="/store" className={`${active && 'font-medium hover:text-white'}`}>Shop Collection</a>
                                                     )}
@@ -50,13 +50,13 @@ export default function Nav() {
                             </div>
                             <div className="hidden md:ml-10 md:block md:space-x-10 ">
                                 <span className="inline-flex ">
-                                    <a href="/events" className="inline-flex items-center text-base tracking-tight antialiased font-medium text-gray-100 hover:text-gray-400 hover:border-b-2 hover:border-indigo-600">
+                                    <a href="/events" className="inline-flex items-center text-base tracking-tight antialiased font-medium text-sky-500 hover:text-gray-400 hover:border-b-2 hover:border-indigo-600">
                                         Market Days
                                     </a>
                                 </span>
                                 <span className="inline-flex">
-                                    <a href="/store" className="inline-flex items-center text-base tracking-tight antialiased font-medium text-rose-500 hover:text-gray-400 hover:border-b-2 hover:border-indigo-400">
-                                        Shop Holiday Collection
+                                    <a href="/store" className="inline-flex items-center text-base tracking-tight antialiased font-medium text-fuchsia-500 hover:text-gray-400 hover:border-b-2 hover:border-indigo-400">
+                                        Shop Collection
                                     </a>
                                 </span>
                             </div>

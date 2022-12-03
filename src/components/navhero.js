@@ -7,7 +7,7 @@ export default function NavHero() {
         <>
         <Nav />
 
-        <main className="relative bg-white md:mb-10 md:-mt-24 lg:-mt-32 ">
+        <main className="relative bg-white mb-10 md:mb-32 lg:mb-36 md:-mt-24 lg:-mt-32 ">
             {/*  <!-- Background image and overlap --> */}
             <div aria-hidden="true" className="absolute inset-0 hidden sm:flex sm:flex-col">
                 <div className="relative w-full flex-1 bg-slate-900">
@@ -38,15 +38,17 @@ export default function NavHero() {
                     <div className="h-48 w-full bg-white"></div>
                 </div>
                 <div className="relative py-32">
-                    <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                        Holiday Season 2022
+                    <h1 className="text-4xl font-bold tracking-tight text-slate-100 sm:text-5xl md:text-6xl">
+                        VIVA Wreaths
                     </h1>
-                    <p class="mt-4 text-xl text-white">
-                        Viva Wreaths are a fun, unique and beautiful way to decorate your home or business. Made locally in San Antonio, we offer a variety of wreaths to suit your mood, style and love for the local community.
+                    <p class="mt-4 text-xl text-slate-300">
+                        Made locally in San Antonio, each Viva Wreath is made with love and designed to add life to every season you love
+                        while also showcasing our love for the local community. 
+                        See the VIVA difference today! 
                     </p>
                     <div className="mt-6">
-                        <a href="/store" className="inline-block rounded-md border border-transparent bg-indigo-600 py-3 px-8 font-medium text-white hover:bg-indigo-700">
-                        Shop Collection
+                        <a href="/store" className="inline-block rounded-md border border-transparent bg-rose-600 py-3 px-8 font-medium text-white hover:bg-indigo-700">
+                        Shop our Holiday Collection
                         </a>
                     </div>
                 </div>
