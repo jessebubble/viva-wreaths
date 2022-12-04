@@ -9,7 +9,7 @@ const features = [
     {
       name: 'HO HO HO',
       description: "It's beggining to look a lot like Christmas so let's get decorating!",
-      imageSrc: 'hohoho.jpg',
+      imageSrc: 'sold2.png',
       imageAlt: 'HO HO HO christmas sign centered on ribbon wreath',
     },
     {
@@ -39,7 +39,7 @@ const features = [
     {
       name: 'Christmas wishing',
       description: "It's the most wonderful time of the year so let's get decorating!",
-      imageSrc: 'wishing.jpg',
+      imageSrc: 'sold3.png',
       imageAlt: 'Christmas wishing centerpiece on ribbon wreath',
     },
     {
@@ -51,7 +51,7 @@ const features = [
     {
       name: 'Santa on a wreath',
       description: "It was the night before Christmas and all through the house...",
-      imageSrc: 'santaho.jpg',
+      imageSrc: 'sold4.png',
       imageAlt: 'santa centerpiece on ribbon wreath',
     },
     {

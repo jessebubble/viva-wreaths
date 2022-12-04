@@ -7,7 +7,7 @@ export default function StoreCard() {
                     <div className="absolute inset-0">
                         <img
                             className="h-full w-full object-cover object-center"
-                            src="./market-bg.png"
+                            src="./christmas-bg.png"
                             alt="day of the dead graphics"
                         />
                         <div className="absolute inset-0 bg-red-600 mix-blend-multiply" />

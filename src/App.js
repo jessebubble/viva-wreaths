@@ -8,8 +8,8 @@ export default function App() {
   return (
     <>
     <NavHero />
-    <StoreCard />
     <EventCard />
+    <StoreCard />
     <Form />
     <Footer />
     </>
