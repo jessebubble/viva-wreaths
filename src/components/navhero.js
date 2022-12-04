@@ -42,7 +42,7 @@ export default function NavHero() {
                         VIVA Wreaths
                     </h1>
                     <p class="mt-4 text-xl text-slate-300">
-                        Made locally in San Antonio, each Viva Wreath is made with love and designed to add life to every season you love
+                        Made locally in San Antonio, each Viva Wreath is made with love and designed to add life to every season
                         while also showcasing our love for the local community. 
                         See the VIVA difference today! 
                     </p>

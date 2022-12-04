@@ -1,6 +1,6 @@
 export default function EventCard() {
     return (
-        <main className="relative md:-mt-16 mb-2 md:mb-10">
+        <main className="relative mt-6 md:-mt-16 mb-2 md:mb-10">
             <div className="absolute inset-x-0 bottom-0 h-1/2 bg-white" />
             <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div className="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">

@@ -27,7 +27,7 @@ const features = [
     {
       name: 'This green guy looks familiar',
       description: "This green guy looks familiar, but he's not the Grinch!",
-      imageSrc: 'green.jpg',
+      imageSrc: 'sold1.png',
       imageAlt: 'green monster centerpiece on ribbon wreath',
     },
     {
